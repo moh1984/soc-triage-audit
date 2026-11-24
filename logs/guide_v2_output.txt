@@ -1,0 +1,161 @@
+/content
+/content/precinct6_research
+loading ...
+  GUIDE_Train.csv: 1,500,000 rows
+  GUIDE_Train.csv: 3,000,000 rows
+  GUIDE_Train.csv: 4,500,000 rows
+  GUIDE_Train.csv: 6,000,000 rows
+  GUIDE_Train.csv: 7,500,000 rows
+  GUIDE_Train.csv: 9,000,000 rows
+  GUIDE_Train.csv: 9,516,837 rows
+  GUIDE_Test.csv: 1,500,000 rows
+  GUIDE_Test.csv: 3,000,000 rows
+  GUIDE_Test.csv: 4,147,992 rows
+labelled rows: 13,613,489  [216s]
+
+== 1. INCIDENTS SPANNING THE TEMPORAL CUT
+  incidents: 1,010,328
+  incidents_spanning_cut: 2,949
+  share_incidents_spanning: 0.0029
+  rows_in_spanning_incidents: 1,226,505
+  share_rows_spanning: 0.0901
+  share_of_row_split_test_rows_whose_incident_also_in_train: 0.1345
+
+incident_temporal: train 9,217,333 rows, test 4,396,156 rows (base rate 0.218)
+  official          seed=0 org_prior row ROC=0.986 | incident ROC=0.951 PR=0.850 base=0.206  [1857s]
+  official          seed=0 content   row ROC=0.941 | incident ROC=0.819 PR=0.650 base=0.206  [1864s]
+  official          seed=0 clean     row ROC=0.948 | incident ROC=0.846 PR=0.701 base=0.206  [1869s]
+  official          seed=0 all       row ROC=0.987 | incident ROC=0.970 PR=0.916 base=0.206  [1874s]
+  official          seed=1 org_prior row ROC=0.986 | incident ROC=0.951 PR=0.850 base=0.206  [3536s]
+  official          seed=1 content   row ROC=0.942 | incident ROC=0.821 PR=0.652 base=0.206  [3542s]
+  official          seed=1 clean     row ROC=0.948 | incident ROC=0.845 PR=0.699 base=0.206  [3547s]
+  official          seed=1 all       row ROC=0.986 | incident ROC=0.969 PR=0.915 base=0.206  [3553s]
+  official          seed=2 org_prior row ROC=0.986 | incident ROC=0.951 PR=0.850 base=0.206  [5206s]
+  official          seed=2 content   row ROC=0.941 | incident ROC=0.820 PR=0.652 base=0.206  [5211s]
+  official          seed=2 clean     row ROC=0.947 | incident ROC=0.846 PR=0.699 base=0.206  [5217s]
+  official          seed=2 all       row ROC=0.986 | incident ROC=0.970 PR=0.916 base=0.206  [5223s]
+
+  CIs for official done  [5843s]
+  incident_temporal seed=0 org_prior row ROC=0.952 | incident ROC=0.930 PR=0.793 base=0.189  [7587s]
+  incident_temporal seed=0 content   row ROC=0.829 | incident ROC=0.760 PR=0.552 base=0.189  [7594s]
+  incident_temporal seed=0 clean     row ROC=0.839 | incident ROC=0.779 PR=0.587 base=0.189  [7599s]
+  incident_temporal seed=0 all       row ROC=0.962 | incident ROC=0.956 PR=0.878 base=0.189  [7605s]
+  incident_temporal seed=1 org_prior row ROC=0.952 | incident ROC=0.930 PR=0.793 base=0.189  [9406s]
+  incident_temporal seed=1 content   row ROC=0.828 | incident ROC=0.760 PR=0.551 base=0.189  [9412s]
+  incident_temporal seed=1 clean     row ROC=0.840 | incident ROC=0.779 PR=0.585 base=0.189  [9419s]
+  incident_temporal seed=1 all       row ROC=0.962 | incident ROC=0.958 PR=0.881 base=0.189  [9424s]
+  incident_temporal seed=2 org_prior row ROC=0.952 | incident ROC=0.930 PR=0.793 base=0.189  [11227s]
+  incident_temporal seed=2 content   row ROC=0.829 | incident ROC=0.760 PR=0.552 base=0.189  [11234s]
+  incident_temporal seed=2 clean     row ROC=0.839 | incident ROC=0.780 PR=0.588 base=0.189  [11239s]
+  incident_temporal seed=2 all       row ROC=0.962 | incident ROC=0.956 PR=0.877 base=0.189  [11246s]
+
+  CIs for incident_temporal done  [12248s]
+  org_holdout       seed=0 org_prior row ROC=0.500 | incident ROC=0.500 PR=0.202 base=0.202  [13924s]
+  org_holdout       seed=0 content   row ROC=0.731 | incident ROC=0.598 PR=0.332 base=0.202  [13928s]
+  org_holdout       seed=0 clean     row ROC=0.740 | incident ROC=0.599 PR=0.333 base=0.202  [13933s]
+  org_holdout       seed=0 all       row ROC=0.739 | incident ROC=0.753 PR=0.453 base=0.202  [13938s]
+  org_holdout       seed=1 org_prior row ROC=0.500 | incident ROC=0.500 PR=0.186 base=0.186  [15964s]
+  org_holdout       seed=1 content   row ROC=0.541 | incident ROC=0.597 PR=0.276 base=0.186  [15967s]
+  org_holdout       seed=1 clean     row ROC=0.539 | incident ROC=0.579 PR=0.267 base=0.186  [15970s]
+  org_holdout       seed=1 all       row ROC=0.544 | incident ROC=0.711 PR=0.414 base=0.186  [15974s]
+  org_holdout       seed=2 org_prior row ROC=0.500 | incident ROC=0.500 PR=0.206 base=0.206  [17994s]
+  org_holdout       seed=2 content   row ROC=0.545 | incident ROC=0.614 PR=0.323 base=0.206  [17998s]
+  org_holdout       seed=2 clean     row ROC=0.536 | incident ROC=0.613 PR=0.337 base=0.206  [18003s]
+  org_holdout       seed=2 all       row ROC=0.544 | incident ROC=0.693 PR=0.373 base=0.206  [18007s]
+
+  CIs for org_holdout done  [18504s]
+
+##### SUMMARY (mean / std over seeds)
+                             roc_auc         rec_at_1fpr         inc_roc_auc         inc_pr_auc         base_rate         inc_base_rate        
+                               mean     std        mean     std        mean     std       mean     std      mean     std          mean     std
+protocol          features                                                                                                                    
+incident_temporal all        0.9618  0.0003      0.6580  0.0044      0.9568  0.0011     0.8787  0.0020    0.2180  0.0000        0.1891  0.0000
+                  clean      0.8393  0.0005      0.3358  0.0015      0.7793  0.0006     0.5869  0.0016    0.2180  0.0000        0.1891  0.0000
+                  content    0.8285  0.0006      0.2917  0.0029      0.7600  0.0003     0.5514  0.0004    0.2180  0.0000        0.1891  0.0000
+                  org_prior  0.9525  0.0000      0.5522  0.0000      0.9305  0.0000     0.7932  0.0000    0.2180  0.0000        0.1891  0.0000
+official          all        0.9864  0.0003      0.8327  0.0026      0.9695  0.0002     0.9158  0.0008    0.3598  0.0000        0.2063  0.0000
+                  clean      0.9479  0.0005      0.6540  0.0009      0.8458  0.0004     0.6996  0.0010    0.3598  0.0000        0.2063  0.0000
+                  content    0.9412  0.0006      0.6211  0.0014      0.8200  0.0009     0.6512  0.0011    0.3598  0.0000        0.2063  0.0000
+                  org_prior  0.9862  0.0000      0.8068  0.0000      0.9512  0.0000     0.8504  0.0000    0.3598  0.0000        0.2063  0.0000
+org_holdout       all        0.6093  0.1126      0.0812  0.0182      0.7190  0.0310     0.4135  0.0400    0.3345  0.0447        0.1981  0.0104
+                  clean      0.6051  0.1171      0.1972  0.1583      0.5969  0.0169     0.3122  0.0390    0.3345  0.0447        0.1981  0.0104
+                  content    0.6055  0.1085      0.2072  0.1416      0.6031  0.0096     0.3103  0.0300    0.3345  0.0447        0.1981  0.0104
+                  org_prior  0.5000  0.0000      0.0000  0.0000      0.5000  0.0000     0.1981  0.0104    0.3345  0.0447        0.1981  0.0104
+
+##### INCIDENT-LEVEL ROC-AUC, 95% CI (seed-averaged ranks; org_holdout per draw)
+         protocol  draw        level  features   roc  roc_lo  roc_hi
+         official fixed     incident org_prior 0.951   0.950   0.952
+         official fixed     incident   content 0.820   0.819   0.822
+         official fixed     incident     clean 0.845   0.843   0.847
+         official fixed     incident       all 0.970   0.970   0.971
+         official fixed organization org_prior 0.951   0.933   0.962
+         official fixed organization   content 0.820   0.768   0.861
+         official fixed organization     clean 0.845   0.801   0.879
+         official fixed organization       all 0.970   0.961   0.978
+incident_temporal fixed     incident org_prior 0.930   0.930   0.931
+incident_temporal fixed     incident   content 0.760   0.759   0.762
+incident_temporal fixed     incident     clean 0.779   0.777   0.781
+incident_temporal fixed     incident       all 0.958   0.958   0.959
+incident_temporal fixed organization org_prior 0.930   0.903   0.948
+incident_temporal fixed organization   content 0.760   0.684   0.820
+incident_temporal fixed organization     clean 0.779   0.705   0.835
+incident_temporal fixed organization       all 0.958   0.941   0.969
+      org_holdout     0     incident org_prior 0.500   0.500   0.500
+      org_holdout     0     incident   content 0.598   0.596   0.601
+      org_holdout     0     incident     clean 0.599   0.596   0.601
+      org_holdout     0     incident       all 0.753   0.751   0.755
+      org_holdout     0 organization org_prior 0.500   0.500   0.500
+      org_holdout     0 organization   content 0.598   0.469   0.737
+      org_holdout     0 organization     clean 0.599   0.476   0.736
+      org_holdout     0 organization       all 0.753   0.672   0.815
+      org_holdout     1     incident org_prior 0.500   0.500   0.500
+      org_holdout     1     incident   content 0.597   0.594   0.600
+      org_holdout     1     incident     clean 0.579   0.576   0.582
+      org_holdout     1     incident       all 0.711   0.709   0.714
+      org_holdout     1 organization org_prior 0.500   0.500   0.500
+      org_holdout     1 organization   content 0.597   0.488   0.673
+      org_holdout     1 organization     clean 0.579   0.467   0.665
+      org_holdout     1 organization       all 0.711   0.586   0.794
+      org_holdout     2     incident org_prior 0.500   0.500   0.500
+      org_holdout     2     incident   content 0.614   0.612   0.617
+      org_holdout     2     incident     clean 0.613   0.611   0.616
+      org_holdout     2     incident       all 0.693   0.690   0.695
+      org_holdout     2 organization org_prior 0.500   0.500   0.500
+      org_holdout     2 organization   content 0.614   0.530   0.689
+      org_holdout     2 organization     clean 0.613   0.511   0.704
+      org_holdout     2 organization       all 0.693   0.619   0.777
+
+##### PAIRED: feature set minus content, incident ROC-AUC
+         protocol  draw        level         a  roc_diff      lo      hi  p_two_sided
+         official fixed     incident org_prior    0.1309  0.1291  0.1327        0.000
+         official fixed     incident     clean    0.0249  0.0240  0.0256        0.000
+         official fixed     incident       all    0.1502  0.1486  0.1517        0.000
+         official fixed organization org_prior    0.1309  0.0901  0.1812        0.000
+         official fixed organization     clean    0.0249  0.0117  0.0414        0.000
+         official fixed organization       all    0.1502  0.1121  0.1994        0.000
+incident_temporal fixed     incident org_prior    0.1702  0.1686  0.1719        0.000
+incident_temporal fixed     incident     clean    0.0188  0.0182  0.0194        0.000
+incident_temporal fixed     incident       all    0.1980  0.1966  0.1995        0.000
+incident_temporal fixed organization org_prior    0.1702  0.1120  0.2403        0.000
+incident_temporal fixed organization     clean    0.0188  0.0065  0.0352        0.000
+incident_temporal fixed organization       all    0.1980  0.1413  0.2703        0.000
+      org_holdout     0     incident org_prior   -0.0982 -0.1006 -0.0958        0.000
+      org_holdout     0     incident     clean    0.0004 -0.0002  0.0010        0.260
+      org_holdout     0     incident       all    0.1550  0.1530  0.1570        0.000
+      org_holdout     0 organization org_prior   -0.0982 -0.2373  0.0307        0.164
+      org_holdout     0 organization     clean    0.0004 -0.0155  0.0152        0.980
+      org_holdout     0 organization       all    0.1550  0.0272  0.2892        0.004
+      org_holdout     1     incident org_prior   -0.0968 -0.0996 -0.0941        0.000
+      org_holdout     1     incident     clean   -0.0176 -0.0186 -0.0165        0.000
+      org_holdout     1     incident       all    0.1143  0.1120  0.1167        0.000
+      org_holdout     1 organization org_prior   -0.0968 -0.1735  0.0116        0.080
+      org_holdout     1 organization     clean   -0.0176 -0.0367  0.0077        0.204
+      org_holdout     1 organization       all    0.1143  0.0479  0.1818        0.000
+      org_holdout     2     incident org_prior   -0.1142 -0.1168 -0.1116        0.000
+      org_holdout     2     incident     clean   -0.0012 -0.0025 -0.0000        0.044
+      org_holdout     2     incident       all    0.0786  0.0764  0.0808        0.000
+      org_holdout     2 organization org_prior   -0.1142 -0.1891 -0.0296        0.000
+      org_holdout     2 organization     clean   -0.0012 -0.0353  0.0351        0.892
+      org_holdout     2 organization       all    0.0786  0.0044  0.1589        0.032
+
+saved -> results/guide_v2

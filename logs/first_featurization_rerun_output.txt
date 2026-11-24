@@ -1,0 +1,5 @@
+rows=622,862 pos=7,728
+naive_global_temporal  lgbm_tab ROC-AUC=0.243 | dst_ip_freq univariate ROC train=0.105 test=0.731
+random_events          lgbm_tab ROC-AUC=0.942
+incident_grouped       lgbm_tab ROC-AUC=0.921
+saved -> results/first_featurization

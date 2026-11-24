@@ -1,0 +1,24 @@
+rows=622,862 positives=7,728; computing context + text features...
+
+== naive_global_temporal: train 436,003 (3,998 pos)  test 156,783 (3,573 pos)
+  naive_global_temporal  logreg_tab      PR-AUC=0.040 (base 0.023, lift 1.7x) ROC=0.686 R@1%FPR=0.016
+  naive_global_temporal  lgbm_tab        PR-AUC=0.048 (base 0.023, lift 2.1x) ROC=0.688 R@1%FPR=0.038
+  naive_global_temporal  logreg_tab+ctx  PR-AUC=0.064 (base 0.023, lift 2.8x) ROC=0.740 R@1%FPR=0.081
+  naive_global_temporal  lgbm_tab+ctx    PR-AUC=0.048 (base 0.023, lift 2.1x) ROC=0.745 R@1%FPR=0.001
+  naive_global_temporal  logreg_text     PR-AUC=0.050 (base 0.023, lift 2.2x) ROC=0.685 R@1%FPR=0.001
+  naive_global_temporal  lgbm_all        PR-AUC=0.045 (base 0.023, lift 2.0x) ROC=0.626 R@1%FPR=0.056
+  naive_global_temporal  iforest_ctx     PR-AUC=0.028 (base 0.023, lift 1.2x) ROC=0.574 R@1%FPR=0.001
+  naive_global_temporal  iforest_ctx_all PR-AUC=0.020 (base 0.023, lift 0.9x) ROC=0.468 R@1%FPR=0.002
+
+== incident_grouped: train 497,820 (5,716 pos)  test 125,042 (2,012 pos)
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.059
+  incident_grouped       lgbm_tab        PR-AUC=0.183 (base 0.016, lift 11.4x) ROC=0.906 R@1%FPR=0.210
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.122
+  incident_grouped       lgbm_tab+ctx    PR-AUC=0.167 (base 0.016, lift 10.4x) ROC=0.895 R@1%FPR=0.176
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 7.0x) ROC=0.876 R@1%FPR=0.073
+  incident_grouped       lgbm_all        PR-AUC=0.165 (base 0.016, lift 10.3x) ROC=0.883 R@1%FPR=0.177
+  incident_grouped       iforest_ctx     PR-AUC=0.032 (base 0.016, lift 2.0x) ROC=0.759 R@1%FPR=0.003
+  incident_grouped       iforest_ctx_all PR-AUC=0.031 (base 0.016, lift 1.9x) ROC=0.758 R@1%FPR=0.003
+
+saved -> results/baselines/baselines_escalation_100m.csv
+EXIT 0

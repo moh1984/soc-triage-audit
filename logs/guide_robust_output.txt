@@ -1,0 +1,81 @@
+/content
+/content/precinct6_research
+loading ...
+  GUIDE_Train.csv: 1,500,000 rows
+  GUIDE_Train.csv: 3,000,000 rows
+  GUIDE_Train.csv: 4,500,000 rows
+  GUIDE_Train.csv: 6,000,000 rows
+  GUIDE_Train.csv: 7,500,000 rows
+  GUIDE_Train.csv: 9,000,000 rows
+  GUIDE_Train.csv: 9,516,837 rows
+  GUIDE_Test.csv: 1,500,000 rows
+  GUIDE_Test.csv: 3,000,000 rows
+  GUIDE_Test.csv: 4,147,992 rows
+labelled rows: 13,613,489; TP share 0.3537  [214s]
+
+== D. ORGANISATION LABEL PURITY
+        orgs     rows  orgs_share  rows_share
+mean                                         
+TP<5%   3683  6814635      0.6440      0.5006
+5-20%    461  1199249      0.0806      0.0881
+20-80%   801  1497607      0.1401      0.1100
+80-95%   218   688286      0.0381      0.0506
+TP>95%   556  3413712      0.0972      0.2508
+rows in organisations that grade >95% one way (TP or not): 75.13%
+
+== E. PROTOCOLS x FEATURE SETS x SEEDS
+  official     seed=0 org_prior_only PR-AUC=0.978 ROC=0.986
+  official     seed=0 content        PR-AUC=0.917 ROC=0.941 R@1%=0.622 | incident PR-AUC=0.650 ROC=0.819 base=0.360  [716s]
+  official     seed=0 clean          PR-AUC=0.927 ROC=0.949 R@1%=0.656 | incident PR-AUC=0.701 ROC=0.847 base=0.360  [1399s]
+  official     seed=0 all            PR-AUC=0.978 ROC=0.986 R@1%=0.838 | incident PR-AUC=0.920 ROC=0.971 base=0.360  [2020s]
+  official     seed=1 org_prior_only PR-AUC=0.978 ROC=0.986
+  official     seed=1 content        PR-AUC=0.915 ROC=0.940 R@1%=0.609 | incident PR-AUC=0.653 ROC=0.821 base=0.360  [2516s]
+  official     seed=1 clean          PR-AUC=0.924 ROC=0.947 R@1%=0.656 | incident PR-AUC=0.701 ROC=0.847 base=0.360  [3165s]
+  official     seed=1 all            PR-AUC=0.978 ROC=0.986 R@1%=0.832 | incident PR-AUC=0.918 ROC=0.970 base=0.360  [3764s]
+  official     seed=2 org_prior_only PR-AUC=0.978 ROC=0.986
+  official     seed=2 content        PR-AUC=0.918 ROC=0.942 R@1%=0.622 | incident PR-AUC=0.652 ROC=0.821 base=0.360  [4261s]
+  official     seed=2 clean          PR-AUC=0.925 ROC=0.948 R@1%=0.650 | incident PR-AUC=0.700 ROC=0.846 base=0.360  [4919s]
+  official     seed=2 all            PR-AUC=0.978 ROC=0.986 R@1%=0.831 | incident PR-AUC=0.918 ROC=0.970 base=0.360  [5527s]
+  temporal     seed=0 org_prior_only PR-AUC=0.934 ROC=0.966
+  temporal     seed=0 content        PR-AUC=0.778 ROC=0.873 R@1%=0.418 | incident PR-AUC=0.560 ROC=0.764 base=0.273  [6101s]
+  temporal     seed=0 clean          PR-AUC=0.792 ROC=0.882 R@1%=0.455 | incident PR-AUC=0.597 ROC=0.785 base=0.273  [6871s]
+  temporal     seed=0 all            PR-AUC=0.945 ROC=0.972 R@1%=0.741 | incident PR-AUC=0.882 ROC=0.958 base=0.273  [7596s]
+  temporal     seed=1 org_prior_only PR-AUC=0.934 ROC=0.966
+  temporal     seed=1 content        PR-AUC=0.778 ROC=0.873 R@1%=0.417 | incident PR-AUC=0.562 ROC=0.766 base=0.273  [8168s]
+  temporal     seed=1 clean          PR-AUC=0.793 ROC=0.882 R@1%=0.454 | incident PR-AUC=0.598 ROC=0.785 base=0.273  [8977s]
+  temporal     seed=1 all            PR-AUC=0.945 ROC=0.972 R@1%=0.744 | incident PR-AUC=0.885 ROC=0.959 base=0.273  [9745s]
+  temporal     seed=2 org_prior_only PR-AUC=0.934 ROC=0.966
+  temporal     seed=2 content        PR-AUC=0.777 ROC=0.873 R@1%=0.416 | incident PR-AUC=0.561 ROC=0.765 base=0.273  [10360s]
+  temporal     seed=2 clean          PR-AUC=0.791 ROC=0.881 R@1%=0.452 | incident PR-AUC=0.598 ROC=0.786 base=0.273  [11180s]
+  temporal     seed=2 all            PR-AUC=0.945 ROC=0.972 R@1%=0.741 | incident PR-AUC=0.884 ROC=0.958 base=0.273  [11928s]
+  org_holdout  seed=0 org_prior_only PR-AUC=0.370 ROC=0.500
+  org_holdout  seed=0 content        PR-AUC=0.719 ROC=0.736 R@1%=0.373 | incident PR-AUC=0.328 ROC=0.596 base=0.370  [12428s]
+  org_holdout  seed=0 clean          PR-AUC=0.723 ROC=0.740 R@1%=0.380 | incident PR-AUC=0.328 ROC=0.596 base=0.370  [13103s]
+  org_holdout  seed=0 all            PR-AUC=0.682 ROC=0.737 R@1%=0.088 | incident PR-AUC=0.456 ROC=0.760 base=0.370  [13733s]
+  org_holdout  seed=1 org_prior_only PR-AUC=0.284 ROC=0.500
+  org_holdout  seed=1 content        PR-AUC=0.414 ROC=0.529 R@1%=0.114 | incident PR-AUC=0.276 ROC=0.593 base=0.284  [14178s]
+  org_holdout  seed=1 clean          PR-AUC=0.418 ROC=0.531 R@1%=0.108 | incident PR-AUC=0.272 ROC=0.583 base=0.284  [14766s]
+  org_holdout  seed=1 all            PR-AUC=0.418 ROC=0.548 R@1%=0.061 | incident PR-AUC=0.416 ROC=0.713 base=0.284  [15292s]
+  org_holdout  seed=2 org_prior_only PR-AUC=0.350 ROC=0.500
+  org_holdout  seed=2 content        PR-AUC=0.493 ROC=0.545 R@1%=0.130 | incident PR-AUC=0.322 ROC=0.610 base=0.350  [15786s]
+  org_holdout  seed=2 clean          PR-AUC=0.492 ROC=0.536 R@1%=0.138 | incident PR-AUC=0.338 ROC=0.614 base=0.350  [16482s]
+  org_holdout  seed=2 all            PR-AUC=0.462 ROC=0.538 R@1%=0.079 | incident PR-AUC=0.366 ROC=0.681 base=0.350  [17080s]
+
+##### SUMMARY (mean / std over seeds)
+                            pr_auc         roc_auc         rec_at_1fpr         inc_pr_auc         inc_roc_auc         base_rate         inc_base_rate        
+                              mean     std    mean     std        mean     std       mean     std        mean     std      mean     std          mean     std
+protocol    features                                                                                                                                         
+official    all             0.9781  0.0004  0.9859  0.0003      0.8338  0.0037     0.9185  0.0010      0.9705  0.0003    0.3598  0.0000        0.2063  0.0000
+            clean           0.9252  0.0012  0.9478  0.0008      0.6537  0.0035     0.7004  0.0005      0.8465  0.0006    0.3598  0.0000        0.2063  0.0000
+            content         0.9165  0.0013  0.9412  0.0008      0.6176  0.0072     0.6517  0.0014      0.8204  0.0009    0.3598  0.0000        0.2063  0.0000
+            org_prior_only  0.9783  0.0000  0.9862  0.0000      0.8068  0.0000     0.8504  0.0000      0.9512  0.0000    0.3598  0.0000        0.2063  0.0000
+org_holdout all             0.5207  0.1417  0.6080  0.1120      0.0760  0.0136     0.4128  0.0449      0.7179  0.0395    0.3345  0.0447        0.1981  0.0104
+            clean           0.5440  0.1589  0.6025  0.1190      0.2088  0.1489     0.3125  0.0354      0.5976  0.0155    0.3345  0.0447        0.1981  0.0104
+            content         0.5421  0.1586  0.6034  0.1153      0.2058  0.1449     0.3085  0.0286      0.5997  0.0092    0.3345  0.0447        0.1981  0.0104
+            org_prior_only  0.3345  0.0447  0.5000  0.0000      0.0000  0.0000     0.1981  0.0104      0.5000  0.0000    0.3345  0.0447        0.1981  0.0104
+temporal    all             0.9451  0.0002  0.9723  0.0001      0.7421  0.0019     0.8836  0.0015      0.9583  0.0006    0.2731  0.0000        0.1898  0.0000
+            clean           0.7921  0.0010  0.8819  0.0006      0.4540  0.0016     0.5976  0.0007      0.7853  0.0004    0.2731  0.0000        0.1898  0.0000
+            content         0.7776  0.0007  0.8731  0.0004      0.4167  0.0010     0.5613  0.0012      0.7649  0.0006    0.2731  0.0000        0.1898  0.0000
+            org_prior_only  0.9340  0.0000  0.9661  0.0000      0.6717  0.0000     0.7945  0.0000      0.9305  0.0000    0.2731  0.0000        0.1898  0.0000
+
+saved -> results/guide_robust

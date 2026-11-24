@@ -1,0 +1,31 @@
+loading ...
+  GUIDE_Train.csv: 1,500,000 rows
+  GUIDE_Train.csv: 3,000,000 rows
+  GUIDE_Train.csv: 4,500,000 rows
+  GUIDE_Train.csv: 6,000,000 rows
+  GUIDE_Train.csv: 7,500,000 rows
+  GUIDE_Train.csv: 9,000,000 rows
+  GUIDE_Train.csv: 9,516,837 rows
+  GUIDE_Test.csv: 1,500,000 rows
+  GUIDE_Test.csv: 3,000,000 rows
+  GUIDE_Test.csv: 4,147,992 rows
+labelled rows: 13,613,489  [219s]
+
+== official: share of rows whose count changes  train 0.215  test 0.412  (test alerts 0.403)
+  official          content  pooled        row ROC=0.941 | incident ROC=0.819 PR=0.650  [765s]
+  official          content  within_split  row ROC=0.934 | incident ROC=0.806 PR=0.627  [1300s]
+  official          content  dropped       row ROC=0.926 | incident ROC=0.774 PR=0.572  [1896s]
+
+== incident_temporal: share of rows whose count changes  train 0.020  test 0.047  (test alerts 0.055)
+  incident_temporal content  pooled        row ROC=0.829 | incident ROC=0.760 PR=0.552  [2509s]
+  incident_temporal content  within_split  row ROC=0.826 | incident ROC=0.760 PR=0.550  [3088s]
+  incident_temporal content  dropped       row ROC=0.807 | incident ROC=0.731 PR=0.500  [3728s]
+
+##### SUMMARY (seed 0)
+                            inc_pr_auc                      inc_roc_auc                      roc_auc                             roc_auc_diff                   inc_roc_auc_diff                    inc_pr_auc_diff               
+variant                       dropped  pooled within_split     dropped  pooled within_split dropped  pooled within_split within_split-pooled dropped-pooled within_split-pooled dropped-pooled within_split-pooled dropped-pooled
+protocol          features                                                                                                                                                                                                       
+incident_temporal content      0.4999  0.5517       0.5496      0.7311  0.7601       0.7598  0.8071  0.8289       0.8264             -0.0025        -0.0218             -0.0003        -0.0290             -0.0021        -0.0518
+official          content      0.5716  0.6499       0.6271      0.7744  0.8190       0.8059  0.9260  0.9406       0.9336             -0.0070        -0.0146             -0.0131        -0.0446             -0.0228        -0.0783
+
+saved -> results/guide_nrows_sensitivity

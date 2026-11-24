@@ -1,0 +1,306 @@
+/content
+/content/precinct6_research
+rows=622,862 positives=7,728; computing causal and two-sided context...
+
+== random_row context=causal seed=0
+  random_row             logreg_tab+ctx  PR-AUC=0.143 (base 0.012, lift 11.6x) ROC=0.931 R@1%FPR=0.201
+
+== random_row context=causal seed=1
+  random_row             logreg_tab+ctx  PR-AUC=0.143 (base 0.012, lift 11.5x) ROC=0.931 R@1%FPR=0.199
+
+== random_row context=causal seed=2
+  random_row             logreg_tab+ctx  PR-AUC=0.145 (base 0.012, lift 11.7x) ROC=0.931 R@1%FPR=0.198
+
+== random_row context=causal seed=3
+  random_row             logreg_tab+ctx  PR-AUC=0.141 (base 0.012, lift 11.4x) ROC=0.931 R@1%FPR=0.195
+
+== random_row context=causal seed=4
+  random_row             logreg_tab+ctx  PR-AUC=0.143 (base 0.012, lift 11.6x) ROC=0.931 R@1%FPR=0.200
+
+== random_row context=two_sided seed=0
+  random_row             logreg_tab+ctx  PR-AUC=0.035 (base 0.012, lift 2.8x) ROC=0.837 R@1%FPR=0.003
+
+== random_row context=two_sided seed=1
+  random_row             logreg_tab+ctx  PR-AUC=0.035 (base 0.012, lift 2.8x) ROC=0.837 R@1%FPR=0.003
+
+== random_row context=two_sided seed=2
+  random_row             logreg_tab+ctx  PR-AUC=0.035 (base 0.012, lift 2.8x) ROC=0.838 R@1%FPR=0.003
+
+== random_row context=two_sided seed=3
+  random_row             logreg_tab+ctx  PR-AUC=0.035 (base 0.012, lift 2.8x) ROC=0.837 R@1%FPR=0.003
+
+== random_row context=two_sided seed=4
+  random_row             logreg_tab+ctx  PR-AUC=0.035 (base 0.012, lift 2.8x) ROC=0.838 R@1%FPR=0.002
+
+== incident_grouped context=causal seed=0
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.119
+
+== incident_grouped context=causal seed=1
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.916 R@1%FPR=0.112
+
+== incident_grouped context=causal seed=2
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.916 R@1%FPR=0.115
+
+== incident_grouped context=causal seed=3
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.144 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.131
+
+== incident_grouped context=causal seed=4
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.144 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.121
+
+== incident_grouped context=two_sided seed=0
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.044 (base 0.016, lift 2.7x) ROC=0.827 R@1%FPR=0.007
+
+== incident_grouped context=two_sided seed=1
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.044 (base 0.016, lift 2.7x) ROC=0.826 R@1%FPR=0.007
+
+== incident_grouped context=two_sided seed=2
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.044 (base 0.016, lift 2.7x) ROC=0.826 R@1%FPR=0.008
+
+== incident_grouped context=two_sided seed=3
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.044 (base 0.016, lift 2.7x) ROC=0.827 R@1%FPR=0.007
+
+== incident_grouped context=two_sided seed=4
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.044 (base 0.016, lift 2.8x) ROC=0.826 R@1%FPR=0.008
+
+== asa_temporal context=causal seed=0
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.5x) ROC=0.948 R@1%FPR=0.262
+
+== asa_temporal context=causal seed=1
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.5x) ROC=0.949 R@1%FPR=0.265
+
+== asa_temporal context=causal seed=2
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.112 (base 0.005, lift 22.7x) ROC=0.949 R@1%FPR=0.269
+
+== asa_temporal context=causal seed=3
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.6x) ROC=0.949 R@1%FPR=0.274
+
+== asa_temporal context=causal seed=4
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.110 (base 0.005, lift 22.4x) ROC=0.949 R@1%FPR=0.262
+
+== asa_temporal context=two_sided seed=0
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.117 (base 0.005, lift 23.7x) ROC=0.956 R@1%FPR=0.295
+
+== asa_temporal context=two_sided seed=1
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.115 (base 0.005, lift 23.3x) ROC=0.955 R@1%FPR=0.276
+
+== asa_temporal context=two_sided seed=2
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.115 (base 0.005, lift 23.4x) ROC=0.956 R@1%FPR=0.285
+
+== asa_temporal context=two_sided seed=3
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.113 (base 0.005, lift 23.0x) ROC=0.957 R@1%FPR=0.278
+
+== asa_temporal context=two_sided seed=4
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.115 (base 0.005, lift 23.3x) ROC=0.955 R@1%FPR=0.290
+
+== vpc_wave context=causal seed=0
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.363 R@1%FPR=0.021
+
+== vpc_wave context=causal seed=1
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.020 (base 0.026, lift 0.8x) ROC=0.357 R@1%FPR=0.021
+
+== vpc_wave context=causal seed=2
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.022 (base 0.026, lift 0.8x) ROC=0.369 R@1%FPR=0.021
+
+== vpc_wave context=causal seed=3
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.361 R@1%FPR=0.021
+
+== vpc_wave context=causal seed=4
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.363 R@1%FPR=0.021
+
+== vpc_wave context=two_sided seed=0
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.019 (base 0.026, lift 0.7x) ROC=0.367 R@1%FPR=0.000
+
+== vpc_wave context=two_sided seed=1
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.019 (base 0.026, lift 0.7x) ROC=0.364 R@1%FPR=0.000
+
+== vpc_wave context=two_sided seed=2
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.019 (base 0.026, lift 0.7x) ROC=0.361 R@1%FPR=0.000
+
+== vpc_wave context=two_sided seed=3
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.019 (base 0.026, lift 0.7x) ROC=0.361 R@1%FPR=0.000
+
+== vpc_wave context=two_sided seed=4
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.019 (base 0.026, lift 0.7x) ROC=0.362 R@1%FPR=0.000
+
+##### SUMMARY: PR-AUC mean ± std over seeds (lift)
+  asa_temporal      logreg_tab+ctx  causal 0.111 ± 0.001 (22.6x) | two-sided 0.115 ± 0.001 (23.3x)
+  incident_grouped  logreg_tab+ctx  causal 0.143 ± 0.001 (8.9x) | two-sided 0.044 ± 0.000 (2.7x)
+  random_row        logreg_tab+ctx  causal 0.143 ± 0.001 (11.6x) | two-sided 0.035 ± 0.000 (2.8x)
+  vpc_wave          logreg_tab+ctx  causal 0.021 ± 0.000 (0.8x) | two-sided 0.019 ± 0.000 (0.7x)
+
+##### PAIRED: two-sided minus causal (PR-AUC, seed-averaged ranks)
+        protocol          model  two_sided_minus_causal  ci95_lo  ci95_hi  p_one_sided
+      random_row logreg_tab+ctx                 -0.1084  -0.1201  -0.0991        0.000
+incident_grouped logreg_tab+ctx                 -0.0994  -0.1077  -0.0929        0.000
+    asa_temporal logreg_tab+ctx                  0.0038  -0.0117   0.0185        0.323
+        vpc_wave logreg_tab+ctx                 -0.0023  -0.0037  -0.0013        0.000
+
+saved -> results/noncausal/logit
+rows=622,862 positives=7,728; computing context + text features...
+
+== incident_grouped seed=0
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.063
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.119
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 7.0x) ROC=0.876 R@1%FPR=0.073
+
+== incident_grouped seed=1
+  incident_grouped       logreg_tab      PR-AUC=0.072 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.061
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.916 R@1%FPR=0.112
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 6.9x) ROC=0.876 R@1%FPR=0.073
+
+== incident_grouped seed=2
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.063
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.916 R@1%FPR=0.115
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 6.9x) ROC=0.876 R@1%FPR=0.073
+
+== incident_grouped seed=3
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.819 R@1%FPR=0.061
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.144 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.131
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 7.0x) ROC=0.876 R@1%FPR=0.073
+
+== incident_grouped seed=4
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.6x) ROC=0.820 R@1%FPR=0.061
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.144 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.121
+  incident_grouped       logreg_text     PR-AUC=0.111 (base 0.016, lift 6.9x) ROC=0.876 R@1%FPR=0.072
+
+== asa_temporal seed=0
+  asa_temporal           logreg_tab      PR-AUC=0.086 (base 0.005, lift 17.4x) ROC=0.899 R@1%FPR=0.220
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.5x) ROC=0.948 R@1%FPR=0.262
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+
+== asa_temporal seed=1
+  asa_temporal           logreg_tab      PR-AUC=0.085 (base 0.005, lift 17.4x) ROC=0.897 R@1%FPR=0.220
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.5x) ROC=0.949 R@1%FPR=0.265
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+
+== asa_temporal seed=2
+  asa_temporal           logreg_tab      PR-AUC=0.086 (base 0.005, lift 17.4x) ROC=0.899 R@1%FPR=0.225
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.112 (base 0.005, lift 22.7x) ROC=0.949 R@1%FPR=0.269
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+
+== asa_temporal seed=3
+  asa_temporal           logreg_tab      PR-AUC=0.086 (base 0.005, lift 17.4x) ROC=0.898 R@1%FPR=0.223
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.6x) ROC=0.949 R@1%FPR=0.274
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+
+== asa_temporal seed=4
+  asa_temporal           logreg_tab      PR-AUC=0.085 (base 0.005, lift 17.3x) ROC=0.898 R@1%FPR=0.216
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.110 (base 0.005, lift 22.4x) ROC=0.949 R@1%FPR=0.262
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+
+== vpc_wave seed=0
+  vpc_wave               logreg_tab      PR-AUC=0.062 (base 0.026, lift 2.4x) ROC=0.741 R@1%FPR=0.025
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.363 R@1%FPR=0.021
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+
+== vpc_wave seed=1
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.744 R@1%FPR=0.025
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.020 (base 0.026, lift 0.8x) ROC=0.357 R@1%FPR=0.021
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+
+== vpc_wave seed=2
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.744 R@1%FPR=0.025
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.022 (base 0.026, lift 0.8x) ROC=0.369 R@1%FPR=0.021
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+
+== vpc_wave seed=3
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.743 R@1%FPR=0.025
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.361 R@1%FPR=0.021
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+
+== vpc_wave seed=4
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.744 R@1%FPR=0.025
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.363 R@1%FPR=0.021
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+
+== asa_to_vpc seed=0
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.692 R@1%FPR=0.035
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.561 R@1%FPR=0.000
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== asa_to_vpc seed=1
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.552 R@1%FPR=0.000
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== asa_to_vpc seed=2
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.550 R@1%FPR=0.000
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== asa_to_vpc seed=3
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.552 R@1%FPR=0.000
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== asa_to_vpc seed=4
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.025 (base 0.021, lift 1.2x) ROC=0.598 R@1%FPR=0.000
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== vpc_to_asa seed=0
+  vpc_to_asa             logreg_tab      PR-AUC=0.040 (base 0.008, lift 4.7x) ROC=0.845 R@1%FPR=0.000
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.071 (base 0.008, lift 8.3x) ROC=0.897 R@1%FPR=0.041
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== vpc_to_asa seed=1
+  vpc_to_asa             logreg_tab      PR-AUC=0.041 (base 0.008, lift 4.8x) ROC=0.849 R@1%FPR=0.000
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.074 (base 0.008, lift 8.7x) ROC=0.900 R@1%FPR=0.085
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== vpc_to_asa seed=2
+  vpc_to_asa             logreg_tab      PR-AUC=0.041 (base 0.008, lift 4.8x) ROC=0.848 R@1%FPR=0.000
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.072 (base 0.008, lift 8.4x) ROC=0.904 R@1%FPR=0.056
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== vpc_to_asa seed=3
+  vpc_to_asa             logreg_tab      PR-AUC=0.042 (base 0.008, lift 4.9x) ROC=0.850 R@1%FPR=0.000
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.081 (base 0.008, lift 9.5x) ROC=0.907 R@1%FPR=0.104
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+== vpc_to_asa seed=4
+  vpc_to_asa             logreg_tab      PR-AUC=0.041 (base 0.008, lift 4.8x) ROC=0.848 R@1%FPR=0.000
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.071 (base 0.008, lift 8.4x) ROC=0.883 R@1%FPR=0.116
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+
+##### SUMMARY (mean ± std over seeds)
+
+asa_temporal  (base rate 0.0049)
+  logreg_tab+ctx  PR-AUC 0.111 ± 0.001  (lift 22.6x)  ROC 0.949 ± 0.000  R@1%FPR 0.266
+  logreg_text     PR-AUC 0.090 ± 0.000  (lift 18.4x)  ROC 0.919 ± 0.000  R@1%FPR 0.090
+  logreg_tab      PR-AUC 0.086 ± 0.000  (lift 17.4x)  ROC 0.898 ± 0.001  R@1%FPR 0.221
+
+asa_to_vpc  (base rate 0.0211)
+  logreg_tab      PR-AUC 0.044 ± 0.000  (lift 2.1x)  ROC 0.691 ± 0.000  R@1%FPR 0.029
+  logreg_tab+ctx  PR-AUC 0.022 ± 0.001  (lift 1.1x)  ROC 0.562 ± 0.021  R@1%FPR 0.000
+  logreg_text     PR-AUC 0.021 ± 0.000  (lift 1.0x)  ROC 0.500 ± 0.000  R@1%FPR 0.000
+
+incident_grouped  (base rate 0.0161)
+  logreg_tab+ctx  PR-AUC 0.143 ± 0.001  (lift 8.9x)  ROC 0.917 ± 0.000  R@1%FPR 0.120
+  logreg_text     PR-AUC 0.112 ± 0.000  (lift 7.0x)  ROC 0.876 ± 0.000  R@1%FPR 0.073
+  logreg_tab      PR-AUC 0.073 ± 0.000  (lift 4.5x)  ROC 0.820 ± 0.000  R@1%FPR 0.062
+
+vpc_to_asa  (base rate 0.0085)
+  logreg_tab+ctx  PR-AUC 0.074 ± 0.004  (lift 8.7x)  ROC 0.898 ± 0.009  R@1%FPR 0.081
+  logreg_tab      PR-AUC 0.041 ± 0.001  (lift 4.8x)  ROC 0.848 ± 0.002  R@1%FPR 0.000
+  logreg_text     PR-AUC 0.008 ± 0.000  (lift 1.0x)  ROC 0.500 ± 0.000  R@1%FPR 0.000
+
+vpc_wave  (base rate 0.0258)
+  logreg_tab      PR-AUC 0.062 ± 0.000  (lift 2.4x)  ROC 0.743 ± 0.001  R@1%FPR 0.025
+  logreg_text     PR-AUC 0.022 ± 0.000  (lift 0.9x)  ROC 0.180 ± 0.000  R@1%FPR 0.000
+  logreg_tab+ctx  PR-AUC 0.021 ± 0.000  (lift 0.8x)  ROC 0.363 ± 0.004  R@1%FPR 0.021
+
+##### PAIRED COMPARISONS (PR-AUC difference a - b, seed-averaged)
+        protocol                   comparison              a          b  pr_auc_diff  ci95_lo  ci95_hi  p_one_sided
+incident_grouped      context effect (logreg) logreg_tab+ctx logreg_tab       0.0708   0.0650   0.0777        0.000
+incident_grouped raw text vs tabular (logreg)    logreg_text logreg_tab       0.0397   0.0332   0.0467        0.000
+    asa_temporal      context effect (logreg) logreg_tab+ctx logreg_tab       0.0254   0.0115   0.0425        0.000
+    asa_temporal raw text vs tabular (logreg)    logreg_text logreg_tab       0.0048  -0.0059   0.0133        0.225
+        vpc_wave      context effect (logreg) logreg_tab+ctx logreg_tab      -0.0413  -0.0444  -0.0382        0.000
+        vpc_wave raw text vs tabular (logreg)    logreg_text logreg_tab      -0.0404  -0.0430  -0.0382        0.000
+      asa_to_vpc      context effect (logreg) logreg_tab+ctx logreg_tab      -0.0219  -0.0242  -0.0199        0.000
+      asa_to_vpc raw text vs tabular (logreg)    logreg_text logreg_tab      -0.0230  -0.0253  -0.0210        0.000
+      vpc_to_asa      context effect (logreg) logreg_tab+ctx logreg_tab       0.0345   0.0317   0.0374        0.000
+      vpc_to_asa raw text vs tabular (logreg)    logreg_text logreg_tab      -0.0324  -0.0339  -0.0310        0.000
+
+saved -> results/seeds/incident_grouped_asa_temporal_vpc_wave_asa_to_vpc_vpc_to_asa_logit

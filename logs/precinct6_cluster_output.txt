@@ -1,0 +1,329 @@
+/content/precinct6_research
+rows=622,862 positives=7,728; computing context + text features...
+
+== incident_grouped seed=0
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.063
+  incident_grouped       lgbm_tab        PR-AUC=0.188 (base 0.016, lift 11.7x) ROC=0.906 R@1%FPR=0.206
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.143 (base 0.016, lift 8.9x) ROC=0.916 R@1%FPR=0.111
+  incident_grouped       lgbm_tab+ctx    PR-AUC=0.166 (base 0.016, lift 10.3x) ROC=0.893 R@1%FPR=0.173
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 7.0x) ROC=0.876 R@1%FPR=0.073
+  incident_grouped       iforest_ctx     PR-AUC=0.034 (base 0.016, lift 2.1x) ROC=0.773 R@1%FPR=0.003
+  incident_grouped       iforest_ctx_all PR-AUC=0.033 (base 0.016, lift 2.1x) ROC=0.771 R@1%FPR=0.003
+
+== incident_grouped seed=1
+  incident_grouped       logreg_tab      PR-AUC=0.072 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.061
+  incident_grouped       lgbm_tab        PR-AUC=0.184 (base 0.016, lift 11.4x) ROC=0.906 R@1%FPR=0.208
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.142 (base 0.016, lift 8.8x) ROC=0.916 R@1%FPR=0.111
+  incident_grouped       lgbm_tab+ctx    PR-AUC=0.168 (base 0.016, lift 10.5x) ROC=0.898 R@1%FPR=0.188
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 6.9x) ROC=0.876 R@1%FPR=0.073
+  incident_grouped       iforest_ctx     PR-AUC=0.032 (base 0.016, lift 2.0x) ROC=0.760 R@1%FPR=0.003
+  incident_grouped       iforest_ctx_all PR-AUC=0.032 (base 0.016, lift 2.0x) ROC=0.761 R@1%FPR=0.003
+
+== incident_grouped seed=2
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.820 R@1%FPR=0.063
+  incident_grouped       lgbm_tab        PR-AUC=0.186 (base 0.016, lift 11.6x) ROC=0.905 R@1%FPR=0.207
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.144 (base 0.016, lift 8.9x) ROC=0.916 R@1%FPR=0.114
+  incident_grouped       lgbm_tab+ctx    PR-AUC=0.161 (base 0.016, lift 10.0x) ROC=0.892 R@1%FPR=0.172
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 6.9x) ROC=0.876 R@1%FPR=0.073
+  incident_grouped       iforest_ctx     PR-AUC=0.032 (base 0.016, lift 2.0x) ROC=0.762 R@1%FPR=0.003
+  incident_grouped       iforest_ctx_all PR-AUC=0.032 (base 0.016, lift 2.0x) ROC=0.762 R@1%FPR=0.003
+
+== incident_grouped seed=3
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.5x) ROC=0.819 R@1%FPR=0.061
+  incident_grouped       lgbm_tab        PR-AUC=0.184 (base 0.016, lift 11.4x) ROC=0.908 R@1%FPR=0.209
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.144 (base 0.016, lift 8.9x) ROC=0.917 R@1%FPR=0.129
+  incident_grouped       lgbm_tab+ctx    PR-AUC=0.160 (base 0.016, lift 10.0x) ROC=0.900 R@1%FPR=0.159
+  incident_grouped       logreg_text     PR-AUC=0.112 (base 0.016, lift 7.0x) ROC=0.876 R@1%FPR=0.073
+  incident_grouped       iforest_ctx     PR-AUC=0.033 (base 0.016, lift 2.1x) ROC=0.766 R@1%FPR=0.003
+  incident_grouped       iforest_ctx_all PR-AUC=0.033 (base 0.016, lift 2.1x) ROC=0.771 R@1%FPR=0.003
+
+== incident_grouped seed=4
+  incident_grouped       logreg_tab      PR-AUC=0.073 (base 0.016, lift 4.6x) ROC=0.820 R@1%FPR=0.061
+  incident_grouped       lgbm_tab        PR-AUC=0.188 (base 0.016, lift 11.7x) ROC=0.908 R@1%FPR=0.207
+  incident_grouped       logreg_tab+ctx  PR-AUC=0.145 (base 0.016, lift 9.0x) ROC=0.917 R@1%FPR=0.124
+  incident_grouped       lgbm_tab+ctx    PR-AUC=0.170 (base 0.016, lift 10.6x) ROC=0.903 R@1%FPR=0.186
+  incident_grouped       logreg_text     PR-AUC=0.111 (base 0.016, lift 6.9x) ROC=0.876 R@1%FPR=0.072
+  incident_grouped       iforest_ctx     PR-AUC=0.033 (base 0.016, lift 2.1x) ROC=0.768 R@1%FPR=0.004
+  incident_grouped       iforest_ctx_all PR-AUC=0.034 (base 0.016, lift 2.1x) ROC=0.772 R@1%FPR=0.003
+
+== asa_temporal seed=0
+  asa_temporal           logreg_tab      PR-AUC=0.086 (base 0.005, lift 17.4x) ROC=0.899 R@1%FPR=0.220
+  asa_temporal           lgbm_tab        PR-AUC=0.084 (base 0.005, lift 17.0x) ROC=0.905 R@1%FPR=0.262
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.5x) ROC=0.948 R@1%FPR=0.262
+  asa_temporal           lgbm_tab+ctx    PR-AUC=0.079 (base 0.005, lift 16.1x) ROC=0.915 R@1%FPR=0.230
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+  asa_temporal           iforest_ctx     PR-AUC=0.102 (base 0.005, lift 20.6x) ROC=0.936 R@1%FPR=0.269
+  asa_temporal           iforest_ctx_all PR-AUC=0.102 (base 0.005, lift 20.7x) ROC=0.937 R@1%FPR=0.278
+
+== asa_temporal seed=1
+  asa_temporal           logreg_tab      PR-AUC=0.085 (base 0.005, lift 17.4x) ROC=0.897 R@1%FPR=0.220
+  asa_temporal           lgbm_tab        PR-AUC=0.083 (base 0.005, lift 16.9x) ROC=0.908 R@1%FPR=0.251
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.5x) ROC=0.949 R@1%FPR=0.265
+  asa_temporal           lgbm_tab+ctx    PR-AUC=0.082 (base 0.005, lift 16.7x) ROC=0.912 R@1%FPR=0.230
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+  asa_temporal           iforest_ctx     PR-AUC=0.102 (base 0.005, lift 20.6x) ROC=0.934 R@1%FPR=0.271
+  asa_temporal           iforest_ctx_all PR-AUC=0.104 (base 0.005, lift 21.0x) ROC=0.939 R@1%FPR=0.265
+
+== asa_temporal seed=2
+  asa_temporal           logreg_tab      PR-AUC=0.086 (base 0.005, lift 17.4x) ROC=0.899 R@1%FPR=0.225
+  asa_temporal           lgbm_tab        PR-AUC=0.085 (base 0.005, lift 17.2x) ROC=0.901 R@1%FPR=0.232
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.112 (base 0.005, lift 22.7x) ROC=0.949 R@1%FPR=0.269
+  asa_temporal           lgbm_tab+ctx    PR-AUC=0.030 (base 0.005, lift 6.0x) ROC=0.809 R@1%FPR=0.125
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+  asa_temporal           iforest_ctx     PR-AUC=0.103 (base 0.005, lift 21.0x) ROC=0.935 R@1%FPR=0.278
+  asa_temporal           iforest_ctx_all PR-AUC=0.098 (base 0.005, lift 19.9x) ROC=0.932 R@1%FPR=0.255
+
+== asa_temporal seed=3
+  asa_temporal           logreg_tab      PR-AUC=0.086 (base 0.005, lift 17.4x) ROC=0.898 R@1%FPR=0.223
+  asa_temporal           lgbm_tab        PR-AUC=0.082 (base 0.005, lift 16.7x) ROC=0.908 R@1%FPR=0.244
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.111 (base 0.005, lift 22.6x) ROC=0.949 R@1%FPR=0.274
+  asa_temporal           lgbm_tab+ctx    PR-AUC=0.008 (base 0.005, lift 1.7x) ROC=0.704 R@1%FPR=0.023
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+  asa_temporal           iforest_ctx     PR-AUC=0.100 (base 0.005, lift 20.4x) ROC=0.934 R@1%FPR=0.255
+  asa_temporal           iforest_ctx_all PR-AUC=0.096 (base 0.005, lift 19.5x) ROC=0.933 R@1%FPR=0.251
+
+== asa_temporal seed=4
+  asa_temporal           logreg_tab      PR-AUC=0.085 (base 0.005, lift 17.3x) ROC=0.898 R@1%FPR=0.216
+  asa_temporal           lgbm_tab        PR-AUC=0.083 (base 0.005, lift 16.8x) ROC=0.903 R@1%FPR=0.248
+  asa_temporal           logreg_tab+ctx  PR-AUC=0.110 (base 0.005, lift 22.4x) ROC=0.949 R@1%FPR=0.262
+  asa_temporal           lgbm_tab+ctx    PR-AUC=0.040 (base 0.005, lift 8.2x) ROC=0.857 R@1%FPR=0.135
+  asa_temporal           logreg_text     PR-AUC=0.090 (base 0.005, lift 18.4x) ROC=0.919 R@1%FPR=0.090
+  asa_temporal           iforest_ctx     PR-AUC=0.101 (base 0.005, lift 20.4x) ROC=0.935 R@1%FPR=0.269
+  asa_temporal           iforest_ctx_all PR-AUC=0.101 (base 0.005, lift 20.5x) ROC=0.935 R@1%FPR=0.260
+
+== vpc_wave seed=0
+  vpc_wave               logreg_tab      PR-AUC=0.062 (base 0.026, lift 2.4x) ROC=0.741 R@1%FPR=0.025
+  vpc_wave               lgbm_tab        PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.542 R@1%FPR=0.000
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.363 R@1%FPR=0.021
+  vpc_wave               lgbm_tab+ctx    PR-AUC=0.071 (base 0.026, lift 2.8x) ROC=0.724 R@1%FPR=0.103
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+  vpc_wave               iforest_ctx     PR-AUC=0.026 (base 0.026, lift 1.0x) ROC=0.505 R@1%FPR=0.014
+  vpc_wave               iforest_ctx_all PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.530 R@1%FPR=0.016
+
+== vpc_wave seed=1
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.744 R@1%FPR=0.025
+  vpc_wave               lgbm_tab        PR-AUC=0.029 (base 0.026, lift 1.1x) ROC=0.544 R@1%FPR=0.000
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.360 R@1%FPR=0.021
+  vpc_wave               lgbm_tab+ctx    PR-AUC=0.079 (base 0.026, lift 3.0x) ROC=0.745 R@1%FPR=0.082
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+  vpc_wave               iforest_ctx     PR-AUC=0.027 (base 0.026, lift 1.0x) ROC=0.524 R@1%FPR=0.012
+  vpc_wave               iforest_ctx_all PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.540 R@1%FPR=0.013
+
+== vpc_wave seed=2
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.744 R@1%FPR=0.025
+  vpc_wave               lgbm_tab        PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.534 R@1%FPR=0.000
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.022 (base 0.026, lift 0.8x) ROC=0.369 R@1%FPR=0.021
+  vpc_wave               lgbm_tab+ctx    PR-AUC=0.072 (base 0.026, lift 2.8x) ROC=0.723 R@1%FPR=0.085
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+  vpc_wave               iforest_ctx     PR-AUC=0.029 (base 0.026, lift 1.1x) ROC=0.540 R@1%FPR=0.013
+  vpc_wave               iforest_ctx_all PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.544 R@1%FPR=0.013
+
+== vpc_wave seed=3
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.743 R@1%FPR=0.025
+  vpc_wave               lgbm_tab        PR-AUC=0.031 (base 0.026, lift 1.2x) ROC=0.558 R@1%FPR=0.000
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.361 R@1%FPR=0.021
+  vpc_wave               lgbm_tab+ctx    PR-AUC=0.079 (base 0.026, lift 3.1x) ROC=0.702 R@1%FPR=0.095
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+  vpc_wave               iforest_ctx     PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.542 R@1%FPR=0.014
+  vpc_wave               iforest_ctx_all PR-AUC=0.028 (base 0.026, lift 1.1x) ROC=0.536 R@1%FPR=0.012
+
+== vpc_wave seed=4
+  vpc_wave               logreg_tab      PR-AUC=0.063 (base 0.026, lift 2.4x) ROC=0.744 R@1%FPR=0.025
+  vpc_wave               lgbm_tab        PR-AUC=0.029 (base 0.026, lift 1.1x) ROC=0.551 R@1%FPR=0.000
+  vpc_wave               logreg_tab+ctx  PR-AUC=0.021 (base 0.026, lift 0.8x) ROC=0.363 R@1%FPR=0.021
+  vpc_wave               lgbm_tab+ctx    PR-AUC=0.072 (base 0.026, lift 2.8x) ROC=0.721 R@1%FPR=0.080
+  vpc_wave               logreg_text     PR-AUC=0.022 (base 0.026, lift 0.9x) ROC=0.180 R@1%FPR=0.000
+  vpc_wave               iforest_ctx     PR-AUC=0.026 (base 0.026, lift 1.0x) ROC=0.504 R@1%FPR=0.014
+  vpc_wave               iforest_ctx_all PR-AUC=0.025 (base 0.026, lift 1.0x) ROC=0.497 R@1%FPR=0.013
+
+== asa_to_vpc seed=0
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.692 R@1%FPR=0.035
+  asa_to_vpc             lgbm_tab        PR-AUC=0.018 (base 0.021, lift 0.9x) ROC=0.453 R@1%FPR=0.000
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.561 R@1%FPR=0.000
+  asa_to_vpc             lgbm_tab+ctx    PR-AUC=0.026 (base 0.021, lift 1.2x) ROC=0.577 R@1%FPR=0.008
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  asa_to_vpc             iforest_ctx     PR-AUC=0.026 (base 0.021, lift 1.2x) ROC=0.575 R@1%FPR=0.014
+  asa_to_vpc             iforest_ctx_all PR-AUC=0.023 (base 0.021, lift 1.1x) ROC=0.523 R@1%FPR=0.017
+
+== asa_to_vpc seed=1
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             lgbm_tab        PR-AUC=0.017 (base 0.021, lift 0.8x) ROC=0.425 R@1%FPR=0.000
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.552 R@1%FPR=0.000
+  asa_to_vpc             lgbm_tab+ctx    PR-AUC=0.024 (base 0.021, lift 1.1x) ROC=0.555 R@1%FPR=0.008
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  asa_to_vpc             iforest_ctx     PR-AUC=0.025 (base 0.021, lift 1.2x) ROC=0.551 R@1%FPR=0.019
+  asa_to_vpc             iforest_ctx_all PR-AUC=0.024 (base 0.021, lift 1.1x) ROC=0.533 R@1%FPR=0.021
+
+== asa_to_vpc seed=2
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             lgbm_tab        PR-AUC=0.020 (base 0.021, lift 0.9x) ROC=0.465 R@1%FPR=0.000
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.550 R@1%FPR=0.000
+  asa_to_vpc             lgbm_tab+ctx    PR-AUC=0.023 (base 0.021, lift 1.1x) ROC=0.530 R@1%FPR=0.012
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  asa_to_vpc             iforest_ctx     PR-AUC=0.025 (base 0.021, lift 1.2x) ROC=0.553 R@1%FPR=0.014
+  asa_to_vpc             iforest_ctx_all PR-AUC=0.022 (base 0.021, lift 1.1x) ROC=0.530 R@1%FPR=0.014
+
+== asa_to_vpc seed=3
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             lgbm_tab        PR-AUC=0.016 (base 0.021, lift 0.8x) ROC=0.391 R@1%FPR=0.000
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.552 R@1%FPR=0.000
+  asa_to_vpc             lgbm_tab+ctx    PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.504 R@1%FPR=0.010
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  asa_to_vpc             iforest_ctx     PR-AUC=0.027 (base 0.021, lift 1.3x) ROC=0.585 R@1%FPR=0.018
+  asa_to_vpc             iforest_ctx_all PR-AUC=0.026 (base 0.021, lift 1.2x) ROC=0.576 R@1%FPR=0.017
+
+== asa_to_vpc seed=4
+  asa_to_vpc             logreg_tab      PR-AUC=0.044 (base 0.021, lift 2.1x) ROC=0.691 R@1%FPR=0.027
+  asa_to_vpc             lgbm_tab        PR-AUC=0.018 (base 0.021, lift 0.9x) ROC=0.432 R@1%FPR=0.000
+  asa_to_vpc             logreg_tab+ctx  PR-AUC=0.025 (base 0.021, lift 1.2x) ROC=0.598 R@1%FPR=0.000
+  asa_to_vpc             lgbm_tab+ctx    PR-AUC=0.020 (base 0.021, lift 0.9x) ROC=0.495 R@1%FPR=0.004
+  asa_to_vpc             logreg_text     PR-AUC=0.021 (base 0.021, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  asa_to_vpc             iforest_ctx     PR-AUC=0.022 (base 0.021, lift 1.1x) ROC=0.529 R@1%FPR=0.018
+  asa_to_vpc             iforest_ctx_all PR-AUC=0.022 (base 0.021, lift 1.0x) ROC=0.516 R@1%FPR=0.015
+
+== vpc_to_asa seed=0
+  vpc_to_asa             logreg_tab      PR-AUC=0.040 (base 0.008, lift 4.7x) ROC=0.845 R@1%FPR=0.000
+  vpc_to_asa             lgbm_tab        PR-AUC=0.015 (base 0.008, lift 1.8x) ROC=0.559 R@1%FPR=0.039
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.072 (base 0.008, lift 8.5x) ROC=0.894 R@1%FPR=0.094
+  vpc_to_asa             lgbm_tab+ctx    PR-AUC=0.013 (base 0.008, lift 1.5x) ROC=0.518 R@1%FPR=0.000
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  vpc_to_asa             iforest_ctx     PR-AUC=0.038 (base 0.008, lift 4.5x) ROC=0.658 R@1%FPR=0.074
+  vpc_to_asa             iforest_ctx_all PR-AUC=0.059 (base 0.008, lift 6.9x) ROC=0.693 R@1%FPR=0.108
+
+== vpc_to_asa seed=1
+  vpc_to_asa             logreg_tab      PR-AUC=0.041 (base 0.008, lift 4.8x) ROC=0.849 R@1%FPR=0.000
+  vpc_to_asa             lgbm_tab        PR-AUC=0.019 (base 0.008, lift 2.3x) ROC=0.602 R@1%FPR=0.058
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.074 (base 0.008, lift 8.7x) ROC=0.900 R@1%FPR=0.085
+  vpc_to_asa             lgbm_tab+ctx    PR-AUC=0.026 (base 0.008, lift 3.1x) ROC=0.569 R@1%FPR=0.060
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  vpc_to_asa             iforest_ctx     PR-AUC=0.055 (base 0.008, lift 6.5x) ROC=0.679 R@1%FPR=0.112
+  vpc_to_asa             iforest_ctx_all PR-AUC=0.052 (base 0.008, lift 6.1x) ROC=0.665 R@1%FPR=0.100
+
+== vpc_to_asa seed=2
+  vpc_to_asa             logreg_tab      PR-AUC=0.041 (base 0.008, lift 4.8x) ROC=0.848 R@1%FPR=0.000
+  vpc_to_asa             lgbm_tab        PR-AUC=0.018 (base 0.008, lift 2.2x) ROC=0.556 R@1%FPR=0.057
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.076 (base 0.008, lift 8.9x) ROC=0.908 R@1%FPR=0.060
+  vpc_to_asa             lgbm_tab+ctx    PR-AUC=0.028 (base 0.008, lift 3.3x) ROC=0.631 R@1%FPR=0.054
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  vpc_to_asa             iforest_ctx     PR-AUC=0.048 (base 0.008, lift 5.7x) ROC=0.688 R@1%FPR=0.090
+  vpc_to_asa             iforest_ctx_all PR-AUC=0.050 (base 0.008, lift 5.9x) ROC=0.632 R@1%FPR=0.093
+
+== vpc_to_asa seed=3
+  vpc_to_asa             logreg_tab      PR-AUC=0.042 (base 0.008, lift 4.9x) ROC=0.850 R@1%FPR=0.000
+  vpc_to_asa             lgbm_tab        PR-AUC=0.022 (base 0.008, lift 2.6x) ROC=0.576 R@1%FPR=0.083
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.079 (base 0.008, lift 9.3x) ROC=0.904 R@1%FPR=0.088
+  vpc_to_asa             lgbm_tab+ctx    PR-AUC=0.019 (base 0.008, lift 2.3x) ROC=0.480 R@1%FPR=0.000
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  vpc_to_asa             iforest_ctx     PR-AUC=0.057 (base 0.008, lift 6.7x) ROC=0.661 R@1%FPR=0.125
+  vpc_to_asa             iforest_ctx_all PR-AUC=0.046 (base 0.008, lift 5.4x) ROC=0.653 R@1%FPR=0.091
+
+== vpc_to_asa seed=4
+  vpc_to_asa             logreg_tab      PR-AUC=0.041 (base 0.008, lift 4.8x) ROC=0.848 R@1%FPR=0.000
+  vpc_to_asa             lgbm_tab        PR-AUC=0.019 (base 0.008, lift 2.2x) ROC=0.581 R@1%FPR=0.066
+  vpc_to_asa             logreg_tab+ctx  PR-AUC=0.073 (base 0.008, lift 8.6x) ROC=0.885 R@1%FPR=0.121
+  vpc_to_asa             lgbm_tab+ctx    PR-AUC=0.028 (base 0.008, lift 3.3x) ROC=0.673 R@1%FPR=0.000
+  vpc_to_asa             logreg_text     PR-AUC=0.008 (base 0.008, lift 1.0x) ROC=0.500 R@1%FPR=0.000
+  vpc_to_asa             iforest_ctx     PR-AUC=0.045 (base 0.008, lift 5.3x) ROC=0.662 R@1%FPR=0.096
+  vpc_to_asa             iforest_ctx_all PR-AUC=0.044 (base 0.008, lift 5.1x) ROC=0.663 R@1%FPR=0.096
+
+##### SUMMARY (mean ± std over seeds)
+
+asa_temporal  (base rate 0.0049)
+  logreg_tab+ctx  PR-AUC 0.111 ± 0.001  (lift 22.6x)  ROC 0.949 ± 0.000  R@1%FPR 0.266
+  iforest_ctx     PR-AUC 0.102 ± 0.001  (lift 20.6x)  ROC 0.934 ± 0.001  R@1%FPR 0.269
+  iforest_ctx_all PR-AUC 0.100 ± 0.003  (lift 20.3x)  ROC 0.935 ± 0.003  R@1%FPR 0.262
+  logreg_text     PR-AUC 0.090 ± 0.000  (lift 18.4x)  ROC 0.919 ± 0.000  R@1%FPR 0.090
+  logreg_tab      PR-AUC 0.086 ± 0.000  (lift 17.4x)  ROC 0.898 ± 0.001  R@1%FPR 0.221
+  lgbm_tab        PR-AUC 0.083 ± 0.001  (lift 16.9x)  ROC 0.905 ± 0.003  R@1%FPR 0.247
+  lgbm_tab+ctx    PR-AUC 0.048 ± 0.032  (lift 9.8x)  ROC 0.840 ± 0.087  R@1%FPR 0.148
+
+asa_to_vpc  (base rate 0.0211)
+  logreg_tab      PR-AUC 0.044 ± 0.000  (lift 2.1x)  ROC 0.691 ± 0.000  R@1%FPR 0.029
+  iforest_ctx     PR-AUC 0.025 ± 0.002  (lift 1.2x)  ROC 0.559 ± 0.022  R@1%FPR 0.017
+  iforest_ctx_all PR-AUC 0.023 ± 0.002  (lift 1.1x)  ROC 0.536 ± 0.023  R@1%FPR 0.017
+  lgbm_tab+ctx    PR-AUC 0.023 ± 0.002  (lift 1.1x)  ROC 0.532 ± 0.034  R@1%FPR 0.008
+  logreg_tab+ctx  PR-AUC 0.022 ± 0.001  (lift 1.1x)  ROC 0.562 ± 0.020  R@1%FPR 0.000
+  logreg_text     PR-AUC 0.021 ± 0.000  (lift 1.0x)  ROC 0.500 ± 0.000  R@1%FPR 0.000
+  lgbm_tab        PR-AUC 0.018 ± 0.001  (lift 0.8x)  ROC 0.433 ± 0.028  R@1%FPR 0.000
+
+incident_grouped  (base rate 0.0161)
+  lgbm_tab        PR-AUC 0.186 ± 0.002  (lift 11.6x)  ROC 0.907 ± 0.001  R@1%FPR 0.207
+  lgbm_tab+ctx    PR-AUC 0.165 ± 0.004  (lift 10.3x)  ROC 0.897 ± 0.005  R@1%FPR 0.176
+  logreg_tab+ctx  PR-AUC 0.143 ± 0.001  (lift 8.9x)  ROC 0.917 ± 0.000  R@1%FPR 0.118
+  logreg_text     PR-AUC 0.112 ± 0.000  (lift 7.0x)  ROC 0.876 ± 0.000  R@1%FPR 0.073
+  logreg_tab      PR-AUC 0.073 ± 0.000  (lift 4.5x)  ROC 0.820 ± 0.000  R@1%FPR 0.062
+  iforest_ctx_all PR-AUC 0.033 ± 0.001  (lift 2.0x)  ROC 0.767 ± 0.005  R@1%FPR 0.003
+  iforest_ctx     PR-AUC 0.033 ± 0.001  (lift 2.0x)  ROC 0.766 ± 0.005  R@1%FPR 0.004
+
+vpc_to_asa  (base rate 0.0085)
+  logreg_tab+ctx  PR-AUC 0.075 ± 0.003  (lift 8.8x)  ROC 0.898 ± 0.009  R@1%FPR 0.090
+  iforest_ctx_all PR-AUC 0.050 ± 0.006  (lift 5.9x)  ROC 0.661 ± 0.022  R@1%FPR 0.098
+  iforest_ctx     PR-AUC 0.049 ± 0.008  (lift 5.7x)  ROC 0.670 ± 0.013  R@1%FPR 0.100
+  logreg_tab      PR-AUC 0.041 ± 0.001  (lift 4.8x)  ROC 0.848 ± 0.002  R@1%FPR 0.000
+  lgbm_tab+ctx    PR-AUC 0.023 ± 0.007  (lift 2.7x)  ROC 0.574 ± 0.079  R@1%FPR 0.023
+  lgbm_tab        PR-AUC 0.019 ± 0.002  (lift 2.2x)  ROC 0.575 ± 0.019  R@1%FPR 0.060
+  logreg_text     PR-AUC 0.008 ± 0.000  (lift 1.0x)  ROC 0.500 ± 0.000  R@1%FPR 0.000
+
+vpc_wave  (base rate 0.0258)
+  lgbm_tab+ctx    PR-AUC 0.075 ± 0.004  (lift 2.9x)  ROC 0.723 ± 0.015  R@1%FPR 0.089
+  logreg_tab      PR-AUC 0.062 ± 0.000  (lift 2.4x)  ROC 0.743 ± 0.001  R@1%FPR 0.025
+  lgbm_tab        PR-AUC 0.029 ± 0.001  (lift 1.1x)  ROC 0.546 ± 0.009  R@1%FPR 0.000
+  iforest_ctx_all PR-AUC 0.028 ± 0.001  (lift 1.1x)  ROC 0.529 ± 0.019  R@1%FPR 0.013
+  iforest_ctx     PR-AUC 0.027 ± 0.001  (lift 1.0x)  ROC 0.523 ± 0.018  R@1%FPR 0.013
+  logreg_text     PR-AUC 0.022 ± 0.000  (lift 0.9x)  ROC 0.180 ± 0.000  R@1%FPR 0.000
+  logreg_tab+ctx  PR-AUC 0.021 ± 0.000  (lift 0.8x)  ROC 0.363 ± 0.004  R@1%FPR 0.021
+  incident_grouped context effect (logreg)                diff=+0.0709 row-CI=[+0.0652,+0.0778] p=0.000 | incident CI=[+0.0373,+0.1161] p=0.000 | hour_block CI=[+0.0282,+0.0984] p=0.000
+  incident_grouped context effect (lgbm)                  diff=-0.0210 row-CI=[-0.0376,-0.0046] p=0.007 | incident CI=[-0.1570,+0.0879] p=0.372 | hour_block CI=[-0.0992,+0.0726] p=0.436
+  incident_grouped raw text vs tabular (logreg)           diff=+0.0397 row-CI=[+0.0332,+0.0467] p=0.000 | incident CI=[+0.0084,+0.1059] p=0.000 | hour_block CI=[+0.0010,+0.1006] p=0.014
+  incident_grouped unsupervised vs best supervised        diff=-0.1562 row-CI=[-0.1713,-0.1441] p=0.000 | incident CI=[-0.3272,-0.0516] p=0.000 | hour_block CI=[-0.2488,-0.0536] p=0.000
+  incident_grouped iForest: all events vs negatives only  diff=+0.0002 row-CI=[-0.0000,+0.0003] p=0.032 | incident CI=[-0.0005,+0.0009] p=0.306 | hour_block CI=[-0.0006,+0.0009] p=0.338
+  asa_temporal     context effect (logreg)                diff=+0.0254 row-CI=[+0.0115,+0.0425] p=0.000 | incident CI=[+0.0080,+0.0432] p=0.002 | hour_block CI=[-0.0075,+0.0361] p=0.068
+  asa_temporal     context effect (lgbm)                  diff=-0.0364 row-CI=[-0.0527,-0.0189] p=0.000 | incident CI=[-0.0586,-0.0152] p=0.000 | hour_block CI=[-0.0516,+0.0554] p=0.125
+  asa_temporal     raw text vs tabular (logreg)           diff=+0.0048 row-CI=[-0.0059,+0.0133] p=0.225 | incident CI=[-0.0062,+0.0141] p=0.214 | hour_block CI=[-0.0147,+0.0087] p=0.177
+  asa_temporal     unsupervised vs best supervised        diff=-0.0100 row-CI=[-0.0257,+0.0061] p=0.081 | incident CI=[-0.0278,+0.0064] p=0.118 | hour_block CI=[-0.0131,+0.0017] p=0.068
+  asa_temporal     iForest: all events vs negatives only  diff=-0.0007 row-CI=[-0.0025,+0.0010] p=0.168 | incident CI=[-0.0026,+0.0009] p=0.180 | hour_block CI=[-0.0017,+0.0006] p=0.213
+  vpc_wave         context effect (logreg)                diff=-0.0412 row-CI=[-0.0443,-0.0381] p=0.000 | incident CI=[-0.0607,-0.0148] p=0.012 | hour_block CI=[-0.0580,+0.0463] p=0.230
+  vpc_wave         context effect (lgbm)                  diff=+0.0525 row-CI=[+0.0474,+0.0592] p=0.000 | incident CI=[+0.0205,+0.1061] p=0.000 | hour_block CI=[-0.0004,+0.0608] p=0.052
+  vpc_wave         raw text vs tabular (logreg)           diff=-0.0404 row-CI=[-0.0430,-0.0382] p=0.000 | incident CI=[-0.0555,-0.0257] p=0.000 | hour_block CI=[-0.0505,+0.0022] p=0.156
+  vpc_wave         unsupervised vs best supervised        diff=-0.0543 row-CI=[-0.0606,-0.0495] p=0.000 | incident CI=[-0.1061,-0.0222] p=0.000 | hour_block CI=[-0.0731,+0.0038] p=0.078
+  vpc_wave         iForest: all events vs negatives only  diff=+0.0005 row-CI=[+0.0005,+0.0006] p=0.000 | incident CI=[+0.0003,+0.0010] p=0.000 | hour_block CI=[-0.0000,+0.0014] p=0.046
+  asa_to_vpc       context effect (logreg)                diff=-0.0219 row-CI=[-0.0242,-0.0199] p=0.000 | incident CI=[-0.0314,-0.0137] p=0.000 | hour_block CI=[-0.0333,+0.0017] p=0.082
+  asa_to_vpc       context effect (lgbm)                  diff=+0.0069 row-CI=[+0.0060,+0.0082] p=0.000 | incident CI=[+0.0027,+0.0122] p=0.000 | hour_block CI=[-0.0068,+0.0351] p=0.208
+  asa_to_vpc       raw text vs tabular (logreg)           diff=-0.0230 row-CI=[-0.0253,-0.0210] p=0.000 | incident CI=[-0.0323,-0.0146] p=0.000 | hour_block CI=[-0.0458,+0.0018] p=0.108
+  asa_to_vpc       unsupervised vs best supervised        diff=-0.0193 row-CI=[-0.0214,-0.0169] p=0.000 | incident CI=[-0.0295,-0.0047] p=0.010 | hour_block CI=[-0.0437,+0.0079] p=0.176
+  asa_to_vpc       iForest: all events vs negatives only  diff=-0.0013 row-CI=[-0.0015,-0.0011] p=0.000 | incident CI=[-0.0021,-0.0006] p=0.004 | hour_block CI=[-0.0030,+0.0008] p=0.150
+  vpc_to_asa       context effect (logreg)                diff=+0.0366 row-CI=[+0.0336,+0.0396] p=0.000 | incident CI=[+0.0103,+0.0770] p=0.000 | hour_block CI=[+0.0195,+0.0549] p=0.000
+  vpc_to_asa       context effect (lgbm)                  diff=+0.0022 row-CI=[-0.0010,+0.0047] p=0.101 | incident CI=[-0.0138,+0.0300] p=0.442 | hour_block CI=[-0.0205,+0.0147] p=0.470
+  vpc_to_asa       raw text vs tabular (logreg)           diff=-0.0324 row-CI=[-0.0339,-0.0310] p=0.000 | incident CI=[-0.0440,-0.0244] p=0.000 | hour_block CI=[-0.0509,-0.0186] p=0.000
+  vpc_to_asa       unsupervised vs best supervised        diff=-0.0271 row-CI=[-0.0317,-0.0227] p=0.000 | incident CI=[-0.0875,+0.0169] p=0.166 | hour_block CI=[-0.0538,+0.0238] p=0.188
+  vpc_to_asa       iForest: all events vs negatives only  diff=-0.0001 row-CI=[-0.0004,+0.0002] p=0.297 | incident CI=[-0.0011,+0.0008] p=0.488 | hour_block CI=[-0.0018,+0.0029] p=0.504
+
+##### PAIRED COMPARISONS (PR-AUC difference a - b, seed-averaged)
+        protocol                            comparison               a              b  pr_auc_diff  ci95_lo  ci95_hi  p_one_sided  incident_ci95_lo  incident_ci95_hi  incident_p  hour_block_ci95_lo  hour_block_ci95_hi  hour_block_p
+incident_grouped               context effect (logreg)  logreg_tab+ctx     logreg_tab       0.0709   0.0652   0.0778        0.000            0.0373            0.1161       0.000              0.0282              0.0984        0.0000
+incident_grouped                 context effect (lgbm)    lgbm_tab+ctx       lgbm_tab      -0.0210  -0.0376  -0.0046        0.007           -0.1570            0.0879       0.372             -0.0992              0.0726        0.4360
+incident_grouped          raw text vs tabular (logreg)     logreg_text     logreg_tab       0.0397   0.0332   0.0467        0.000            0.0084            0.1059       0.000              0.0010              0.1006        0.0140
+incident_grouped       unsupervised vs best supervised     iforest_ctx       lgbm_tab      -0.1562  -0.1713  -0.1441        0.000           -0.3272           -0.0516       0.000             -0.2488             -0.0536        0.0000
+incident_grouped iForest: all events vs negatives only iforest_ctx_all    iforest_ctx       0.0002  -0.0000   0.0003        0.032           -0.0005            0.0009       0.306             -0.0006              0.0009        0.3380
+    asa_temporal               context effect (logreg)  logreg_tab+ctx     logreg_tab       0.0254   0.0115   0.0425        0.000            0.0080            0.0432       0.002             -0.0075              0.0361        0.0684
+    asa_temporal                 context effect (lgbm)    lgbm_tab+ctx       lgbm_tab      -0.0364  -0.0527  -0.0189        0.000           -0.0586           -0.0152       0.000             -0.0516              0.0554        0.1247
+    asa_temporal          raw text vs tabular (logreg)     logreg_text     logreg_tab       0.0048  -0.0059   0.0133        0.225           -0.0062            0.0141       0.214             -0.0147              0.0087        0.1771
+    asa_temporal       unsupervised vs best supervised     iforest_ctx logreg_tab+ctx      -0.0100  -0.0257   0.0061        0.081           -0.0278            0.0064       0.118             -0.0131              0.0017        0.0684
+    asa_temporal iForest: all events vs negatives only iforest_ctx_all    iforest_ctx      -0.0007  -0.0025   0.0010        0.168           -0.0026            0.0009       0.180             -0.0017              0.0006        0.2133
+        vpc_wave               context effect (logreg)  logreg_tab+ctx     logreg_tab      -0.0412  -0.0443  -0.0381        0.000           -0.0607           -0.0148       0.012             -0.0580              0.0463        0.2305
+        vpc_wave                 context effect (lgbm)    lgbm_tab+ctx       lgbm_tab       0.0525   0.0474   0.0592        0.000            0.0205            0.1061       0.000             -0.0004              0.0608        0.0521
+        vpc_wave          raw text vs tabular (logreg)     logreg_text     logreg_tab      -0.0404  -0.0430  -0.0382        0.000           -0.0555           -0.0257       0.000             -0.0505              0.0022        0.1563
+        vpc_wave       unsupervised vs best supervised     iforest_ctx   lgbm_tab+ctx      -0.0543  -0.0606  -0.0495        0.000           -0.1061           -0.0222       0.000             -0.0731              0.0038        0.0782
+        vpc_wave iForest: all events vs negatives only iforest_ctx_all    iforest_ctx       0.0005   0.0005   0.0006        0.000            0.0003            0.0010       0.000             -0.0000              0.0014        0.0461
+      asa_to_vpc               context effect (logreg)  logreg_tab+ctx     logreg_tab      -0.0219  -0.0242  -0.0199        0.000           -0.0314           -0.0137       0.000             -0.0333              0.0017        0.0820
+      asa_to_vpc                 context effect (lgbm)    lgbm_tab+ctx       lgbm_tab       0.0069   0.0060   0.0082        0.000            0.0027            0.0122       0.000             -0.0068              0.0351        0.2080
+      asa_to_vpc          raw text vs tabular (logreg)     logreg_text     logreg_tab      -0.0230  -0.0253  -0.0210        0.000           -0.0323           -0.0146       0.000             -0.0458              0.0018        0.1080
+      asa_to_vpc       unsupervised vs best supervised     iforest_ctx     logreg_tab      -0.0193  -0.0214  -0.0169        0.000           -0.0295           -0.0047       0.010             -0.0437              0.0079        0.1760
+      asa_to_vpc iForest: all events vs negatives only iforest_ctx_all    iforest_ctx      -0.0013  -0.0015  -0.0011        0.000           -0.0021           -0.0006       0.004             -0.0030              0.0008        0.1500
+      vpc_to_asa               context effect (logreg)  logreg_tab+ctx     logreg_tab       0.0366   0.0336   0.0396        0.000            0.0103            0.0770       0.000              0.0195              0.0549        0.0000
+      vpc_to_asa                 context effect (lgbm)    lgbm_tab+ctx       lgbm_tab       0.0022  -0.0010   0.0047        0.101           -0.0138            0.0300       0.442             -0.0205              0.0147        0.4700
+      vpc_to_asa          raw text vs tabular (logreg)     logreg_text     logreg_tab      -0.0324  -0.0339  -0.0310        0.000           -0.0440           -0.0244       0.000             -0.0509             -0.0186        0.0000
+      vpc_to_asa       unsupervised vs best supervised     iforest_ctx logreg_tab+ctx      -0.0271  -0.0317  -0.0227        0.000           -0.0875            0.0169       0.166             -0.0538              0.0238        0.1880
+      vpc_to_asa iForest: all events vs negatives only iforest_ctx_all    iforest_ctx      -0.0001  -0.0004   0.0002        0.297           -0.0011            0.0008       0.488             -0.0018              0.0029        0.5040
+
+saved -> results/seeds/incident_grouped_asa_temporal_vpc_wave_asa_to_vpc_vpc_to_asa_cluster

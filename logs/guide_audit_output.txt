@@ -1,0 +1,82 @@
+/content
+/content/precinct6_research
+loading ...
+  GUIDE_Train.csv: 1,500,000 rows
+  GUIDE_Train.csv: 3,000,000 rows
+  GUIDE_Train.csv: 4,500,000 rows
+  GUIDE_Train.csv: 6,000,000 rows
+  GUIDE_Train.csv: 7,500,000 rows
+  GUIDE_Train.csv: 9,000,000 rows
+  GUIDE_Train.csv: 9,516,837 rows
+  GUIDE_Test.csv: 1,500,000 rows
+  GUIDE_Test.csv: 3,000,000 rows
+  GUIDE_Test.csv: 4,147,992 rows
+
+== A. LABEL CHECKS
+(OrgId, IncidentId) with >1 grade: 0.0000% of 1,010,328 incidents
+ungraded rows: 0.3757%; rows with a response action: 0.4243%
+IncidentGrade  BenignPositive  FalsePositive  TruePositive    nan
+has_action
+False                 5862090        2932743       4812019      0
+True                     1667           1922          3048  51340
+
+labelled rows: 13,613,489; TP share: 0.3537  [212s]
+
+== B. SINGLE-COLUMN AUDIT (official split)
+  DetectorId           PR-AUC=0.837  seen=1.00
+  AlertTitle           PR-AUC=0.836  seen=0.95
+  Category             PR-AUC=0.520  seen=1.00
+  MitreTechniques      PR-AUC=0.567  seen=1.00
+  EntityType           PR-AUC=0.578  seen=1.00
+  EvidenceRole         PR-AUC=0.405  seen=1.00
+  ThreatFamily         PR-AUC=0.363  seen=1.00
+  ResourceType         PR-AUC=0.360  seen=1.00
+  Roles                PR-AUC=0.365  seen=1.00
+  OSFamily             PR-AUC=0.364  seen=1.00
+  OSVersion            PR-AUC=0.364  seen=1.00
+  AntispamDirection    PR-AUC=0.361  seen=1.00
+  SuspicionLevel       PR-AUC=0.383  seen=1.00
+  LastVerdict          PR-AUC=0.389  seen=1.00
+  CountryCode          PR-AUC=0.474  seen=1.00
+  State                PR-AUC=0.459  seen=1.00
+  City                 PR-AUC=0.460  seen=1.00
+  DeviceId             PR-AUC=0.380  seen=1.00
+  Sha256               PR-AUC=0.391  seen=0.99
+  IpAddress            PR-AUC=0.541  seen=0.98
+  Url                  PR-AUC=0.391  seen=0.99
+  AccountSid           PR-AUC=0.559  seen=0.97
+  AccountUpn           PR-AUC=0.607  seen=0.94
+  AccountObjectId      PR-AUC=0.559  seen=0.97
+  AccountName          PR-AUC=0.561  seen=0.97
+  DeviceName           PR-AUC=0.399  seen=0.99
+  NetworkMessageId     PR-AUC=0.403  seen=0.93
+  EmailClusterId       PR-AUC=0.363  seen=1.00
+  RegistryKey          PR-AUC=0.361  seen=1.00
+  RegistryValueName    PR-AUC=0.360  seen=1.00
+  RegistryValueData    PR-AUC=0.360  seen=1.00
+  ApplicationId        PR-AUC=0.364  seen=1.00
+  ApplicationName      PR-AUC=0.364  seen=1.00
+  OAuthApplicationId   PR-AUC=0.360  seen=1.00
+  FileName             PR-AUC=0.404  seen=0.98
+  FolderPath           PR-AUC=0.394  seen=0.99
+  ResourceIdName       PR-AUC=0.360  seen=1.00
+  hour                 PR-AUC=0.389  seen=1.00
+  n_rows_alert         PR-AUC=0.568  seen=1.00
+  OrgId                PR-AUC=0.978  seen=1.00
+  Id                   PR-AUC=0.360  seen=0.00
+  IncidentId           PR-AUC=0.377  seen=0.54
+  AlertId              PR-AUC=0.722  seen=0.41
+  ActionGrouped        PR-AUC=0.360  seen=1.00
+  ActionGranular       PR-AUC=0.360  seen=1.00
+
+== C. PROTOCOLS
+  official     clean PR-AUC=0.926 ROC=0.949 R@1%=0.656 base=0.360  [1195s]
+  official     all   PR-AUC=0.978 ROC=0.986 R@1%=0.835 base=0.360  [2060s]
+  random_row   clean PR-AUC=0.931 ROC=0.954 R@1%=0.670 base=0.354  [2933s]
+  random_row   all   PR-AUC=0.987 ROC=0.992 R@1%=0.883 base=0.354  [3759s]
+  temporal     clean PR-AUC=0.790 ROC=0.881 R@1%=0.455 base=0.273  [4778s]
+  temporal     all   PR-AUC=0.944 ROC=0.972 R@1%=0.740 base=0.273  [5739s]
+  org_holdout  clean PR-AUC=0.839 ROC=0.835 R@1%=0.403 base=0.439  [6793s]
+  org_holdout  all   PR-AUC=0.794 ROC=0.791 R@1%=0.191 base=0.439  [7888s]
+
+saved -> results/guide_audit

@@ -1,0 +1,98 @@
+rows=622,862 positives=7,728; computing context + text features...
+
+== incident_grouped seed=0
+  incident_grouped       lgbm_all        PR-AUC=0.168 (base 0.016, lift 10.4x) ROC=0.894 R@1%FPR=0.184
+
+== incident_grouped seed=1
+  incident_grouped       lgbm_all        PR-AUC=0.164 (base 0.016, lift 10.2x) ROC=0.881 R@1%FPR=0.191
+
+== incident_grouped seed=2
+  incident_grouped       lgbm_all        PR-AUC=0.167 (base 0.016, lift 10.4x) ROC=0.891 R@1%FPR=0.195
+
+== incident_grouped seed=3
+  incident_grouped       lgbm_all        PR-AUC=0.168 (base 0.016, lift 10.4x) ROC=0.899 R@1%FPR=0.189
+
+== incident_grouped seed=4
+  incident_grouped       lgbm_all        PR-AUC=0.174 (base 0.016, lift 10.8x) ROC=0.891 R@1%FPR=0.203
+
+== asa_temporal seed=0
+  asa_temporal           lgbm_all        PR-AUC=0.062 (base 0.005, lift 12.5x) ROC=0.861 R@1%FPR=0.190
+
+== asa_temporal seed=1
+  asa_temporal           lgbm_all        PR-AUC=0.072 (base 0.005, lift 14.6x) ROC=0.879 R@1%FPR=0.211
+
+== asa_temporal seed=2
+  asa_temporal           lgbm_all        PR-AUC=0.027 (base 0.005, lift 5.5x) ROC=0.787 R@1%FPR=0.137
+
+== asa_temporal seed=3
+  asa_temporal           lgbm_all        PR-AUC=0.068 (base 0.005, lift 13.7x) ROC=0.898 R@1%FPR=0.200
+
+== asa_temporal seed=4
+  asa_temporal           lgbm_all        PR-AUC=0.081 (base 0.005, lift 16.5x) ROC=0.910 R@1%FPR=0.216
+
+== vpc_wave seed=0
+  vpc_wave               lgbm_all        PR-AUC=0.055 (base 0.026, lift 2.1x) ROC=0.737 R@1%FPR=0.026
+
+== vpc_wave seed=1
+  vpc_wave               lgbm_all        PR-AUC=0.044 (base 0.026, lift 1.7x) ROC=0.681 R@1%FPR=0.032
+
+== vpc_wave seed=2
+  vpc_wave               lgbm_all        PR-AUC=0.076 (base 0.026, lift 2.9x) ROC=0.739 R@1%FPR=0.080
+
+== vpc_wave seed=3
+  vpc_wave               lgbm_all        PR-AUC=0.039 (base 0.026, lift 1.5x) ROC=0.657 R@1%FPR=0.017
+
+== vpc_wave seed=4
+  vpc_wave               lgbm_all        PR-AUC=0.034 (base 0.026, lift 1.3x) ROC=0.638 R@1%FPR=0.001
+
+== asa_to_vpc seed=0
+  asa_to_vpc             lgbm_all        PR-AUC=0.030 (base 0.021, lift 1.4x) ROC=0.608 R@1%FPR=0.020
+
+== asa_to_vpc seed=1
+  asa_to_vpc             lgbm_all        PR-AUC=0.024 (base 0.021, lift 1.1x) ROC=0.551 R@1%FPR=0.003
+
+== asa_to_vpc seed=2
+  asa_to_vpc             lgbm_all        PR-AUC=0.034 (base 0.021, lift 1.6x) ROC=0.569 R@1%FPR=0.034
+
+== asa_to_vpc seed=3
+  asa_to_vpc             lgbm_all        PR-AUC=0.026 (base 0.021, lift 1.2x) ROC=0.549 R@1%FPR=0.028
+
+== asa_to_vpc seed=4
+  asa_to_vpc             lgbm_all        PR-AUC=0.025 (base 0.021, lift 1.2x) ROC=0.499 R@1%FPR=0.021
+
+== vpc_to_asa seed=0
+  vpc_to_asa             lgbm_all        PR-AUC=0.018 (base 0.008, lift 2.1x) ROC=0.527 R@1%FPR=0.001
+
+== vpc_to_asa seed=1
+  vpc_to_asa             lgbm_all        PR-AUC=0.020 (base 0.008, lift 2.3x) ROC=0.452 R@1%FPR=0.000
+
+== vpc_to_asa seed=2
+  vpc_to_asa             lgbm_all        PR-AUC=0.051 (base 0.008, lift 6.0x) ROC=0.449 R@1%FPR=0.248
+
+== vpc_to_asa seed=3
+  vpc_to_asa             lgbm_all        PR-AUC=0.020 (base 0.008, lift 2.3x) ROC=0.598 R@1%FPR=0.000
+
+== vpc_to_asa seed=4
+  vpc_to_asa             lgbm_all        PR-AUC=0.016 (base 0.008, lift 1.9x) ROC=0.442 R@1%FPR=0.000
+
+##### SUMMARY (mean ± std over seeds)
+
+asa_temporal  (base rate 0.0049)
+  lgbm_all        PR-AUC 0.062 ± 0.021  (lift 12.6x)  ROC 0.867 ± 0.048  R@1%FPR 0.191
+
+asa_to_vpc  (base rate 0.0211)
+  lgbm_all        PR-AUC 0.028 ± 0.004  (lift 1.3x)  ROC 0.555 ± 0.039  R@1%FPR 0.021
+
+incident_grouped  (base rate 0.0161)
+  lgbm_all        PR-AUC 0.168 ± 0.003  (lift 10.5x)  ROC 0.891 ± 0.007  R@1%FPR 0.193
+
+vpc_to_asa  (base rate 0.0085)
+  lgbm_all        PR-AUC 0.025 ± 0.015  (lift 2.9x)  ROC 0.494 ± 0.068  R@1%FPR 0.050
+
+vpc_wave  (base rate 0.0258)
+  lgbm_all        PR-AUC 0.050 ± 0.017  (lift 1.9x)  ROC 0.690 ± 0.046  R@1%FPR 0.031
+
+##### PAIRED COMPARISONS (PR-AUC difference a - b, seed-averaged)
+
+saved -> results/seeds/incident_grouped_asa_temporal_vpc_wave_asa_to_vpc_vpc_to_asa_gbdt_all_rerun
+EXIT 0

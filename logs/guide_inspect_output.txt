@@ -1,0 +1,104 @@
+/content
+/content/precinct6_research
+train file: /content/guide/GUIDE_Train.csv | test file: /content/guide/GUIDE_Test.csv
+  read 2,000,000 rows of GUIDE_Train.csv
+  read 4,000,000 rows of GUIDE_Train.csv
+  read 6,000,000 rows of GUIDE_Train.csv
+  read 8,000,000 rows of GUIDE_Train.csv
+  read 9,516,837 rows of GUIDE_Train.csv
+  read 2,000,000 rows of GUIDE_Test.csv
+  read 4,000,000 rows of GUIDE_Test.csv
+  read 4,147,992 rows of GUIDE_Test.csv
+
+== 1. SCHEMA
+train: 45 columns: ['Id', 'OrgId', 'IncidentId', 'AlertId', 'Timestamp', 'DetectorId', 'AlertTitle', 'Category', 'MitreTechniques', 'IncidentGrade', 'ActionGrouped', 'ActionGranular', 'EntityType', 'EvidenceRole', 'DeviceId', 'Sha256', 'IpAddress', 'Url', 'AccountSid', 'AccountUpn', 'AccountObjectId', 'AccountName', 'DeviceName', 'NetworkMessageId', 'EmailClusterId', 'RegistryKey', 'RegistryValueName', 'RegistryValueData', 'ApplicationId', 'ApplicationName', 'OAuthApplicationId', 'ThreatFamily', 'FileName', 'FolderPath', 'ResourceIdName', 'ResourceType', 'Roles', 'OSFamily', 'OSVersion', 'AntispamDirection', 'SuspicionLevel', 'LastVerdict', 'CountryCode', 'State', 'City']
+test only: ['Usage'] | train only: []
+
+== 2. LABELS (IncidentGrade)
+
+train: 9,516,837 evidence rows, 1,265,644 alerts, 466,151 incidents, 5,769 orgs
+  evidence-level grade:
+ IncidentGrade
+BenignPositive    0.4320
+TruePositive      0.3491
+FalsePositive     0.2135
+NaN               0.0054
+  incident-level grade:
+ IncidentGrade
+BenignPositive    0.5006
+FalsePositive     0.2928
+TruePositive      0.2066
+  incidents with more than one grade: 20.7671%
+
+test: 4,147,992 evidence rows, 637,320 alerts, 236,267 incidents, 4,400 orgs
+  evidence-level grade:
+ IncidentGrade
+BenignPositive    0.4226
+TruePositive      0.3598
+FalsePositive     0.2176
+  incident-level grade:
+ IncidentGrade
+BenignPositive    0.4965
+FalsePositive     0.2977
+TruePositive      0.2058
+  incidents with more than one grade: 13.8191%
+
+== 3. OFFICIAL SPLIT: temporal, random or grouped?
+train time: 2023-11-20 16:32:22+00:00 -> 2024-06-17 14:45:38+00:00
+test  time: 2023-11-22 15:55:05+00:00 -> 2024-06-17 13:30:09+00:00
+share of test rows inside the train time range: 100.00%; after it: 0.00%
+share of test IncidentId values also present in train: 46.70%
+share of test AlertId values also present in train: 40.33%
+share of test OrgId values also present in train: 92.14%
+share of test DetectorId values also present in train: 88.11%
+share of test (OrgId, IncidentId) values also present in train: 0.00%
+
+rows per day (train, test, test share):
+                             train    test  test_share
+Timestamp                                            
+2024-05-09 00:00:00+00:00      24       4       0.143
+2024-05-10 00:00:00+00:00      51      37       0.420
+2024-05-11 00:00:00+00:00      27       9       0.250
+2024-05-12 00:00:00+00:00       8       8       0.500
+2024-05-13 00:00:00+00:00      88      51       0.367
+2024-05-14 00:00:00+00:00     138      95       0.408
+2024-05-15 00:00:00+00:00     203      83       0.290
+2024-05-16 00:00:00+00:00      38      52       0.578
+2024-05-17 00:00:00+00:00     144      82       0.363
+2024-05-18 00:00:00+00:00      32     111       0.776
+2024-05-19 00:00:00+00:00     172     519       0.751
+2024-05-20 00:00:00+00:00   62024   20662       0.250
+2024-05-21 00:00:00+00:00   65432   35223       0.350
+2024-05-22 00:00:00+00:00   56831   48463       0.460
+2024-05-23 00:00:00+00:00   84329   35548       0.297
+2024-05-24 00:00:00+00:00   98807   42669       0.302
+2024-05-25 00:00:00+00:00   98473   46187       0.319
+2024-05-26 00:00:00+00:00  113505   36300       0.242
+2024-05-27 00:00:00+00:00   70848   31591       0.308
+2024-05-28 00:00:00+00:00   29603   16442       0.357
+2024-05-29 00:00:00+00:00   40351    8515       0.174
+2024-05-30 00:00:00+00:00   50260   23391       0.318
+2024-05-31 00:00:00+00:00   81421   38374       0.320
+2024-06-01 00:00:00+00:00   56042   31810       0.362
+2024-06-02 00:00:00+00:00   99170   46638       0.320
+2024-06-03 00:00:00+00:00  784936  391810       0.333
+2024-06-04 00:00:00+00:00  910606  398093       0.304
+2024-06-05 00:00:00+00:00  899669  334913       0.271
+2024-06-06 00:00:00+00:00  736749  381800       0.341
+2024-06-07 00:00:00+00:00  630615  299801       0.322
+2024-06-08 00:00:00+00:00  452413  211577       0.319
+2024-06-09 00:00:00+00:00  475549  179885       0.274
+2024-06-10 00:00:00+00:00  698437  278150       0.285
+2024-06-11 00:00:00+00:00  742551  297850       0.286
+2024-06-12 00:00:00+00:00  683108  271428       0.284
+2024-06-13 00:00:00+00:00  660261  300012       0.312
+2024-06-14 00:00:00+00:00  468986  190130       0.288
+2024-06-15 00:00:00+00:00  175986   70200       0.285
+2024-06-16 00:00:00+00:00  145738   61711       0.297
+2024-06-17 00:00:00+00:00   41631   17187       0.292
+
+== 4. ORGANIZATIONS
+orgs in train: 5,769; top-10 orgs hold 24.9% of rows; median incidents per org: 7
+
+##### VERDICT on the official split: GROUPED or mixed: inspect the tables
+saved -> results/guide_inspect

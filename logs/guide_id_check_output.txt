@@ -1,0 +1,55 @@
+/content
+/content/precinct6_research
+loading ...
+  GUIDE_Train.csv: 1,500,000 rows
+  GUIDE_Train.csv: 3,000,000 rows
+  GUIDE_Train.csv: 4,500,000 rows
+  GUIDE_Train.csv: 6,000,000 rows
+  GUIDE_Train.csv: 7,500,000 rows
+  GUIDE_Train.csv: 9,000,000 rows
+  GUIDE_Train.csv: 9,516,837 rows
+  GUIDE_Test.csv: 1,500,000 rows
+  GUIDE_Test.csv: 3,000,000 rows
+  GUIDE_Test.csv: 4,147,992 rows
+  Id                 values=1,010,328  multi-org values=0.00%  rows=0.00%  top=601295424398 (0.2%)  TP shared/not=nan/0.354
+  IncidentId         values=  575,657  multi-org values=31.55%  rows=59.21%  top=0 (0.2%)  TP shared/not=0.270/0.476
+  AlertId            values=1,629,092  multi-org values=0.00%  rows=0.00%  top=0 (0.2%)  TP shared/not=nan/0.354
+  DeviceId           values=   87,488  multi-org values=0.00%  rows=96.22%  top=98799 (96.2%)  TP shared/not=0.360/0.188
+  Sha256             values=  131,063  multi-org values=3.63%  rows=95.86%  top=138268 (92.2%)  TP shared/not=0.364/0.105
+  IpAddress          values=  342,274  multi-org values=12.43%  rows=91.42%  top=360606 (77.2%)  TP shared/not=0.360/0.285
+  Url                values=  157,451  multi-org values=3.34%  rows=96.17%  top=160396 (92.8%)  TP shared/not=0.358/0.241
+  AccountSid         values=  417,618  multi-org values=0.00%  rows=76.73%  top=441377 (76.7%)  TP shared/not=0.334/0.419
+  AccountUpn         values=  624,641  multi-org values=0.12%  rows=64.42%  top=673934 (64.2%)  TP shared/not=0.369/0.327
+  AccountObjectId    values=  402,215  multi-org values=0.00%  rows=76.95%  top=425863 (76.9%)  TP shared/not=0.333/0.423
+  AccountName        values=  427,996  multi-org values=3.32%  rows=77.57%  top=453297 (75.5%)  TP shared/not=0.336/0.414
+  DeviceName         values=  139,984  multi-org values=0.03%  rows=92.35%  top=153085 (92.3%)  TP shared/not=0.374/0.110
+  NetworkMessageId   values=  490,567  multi-org values=0.00%  rows=87.99%  top=529644 (88.0%)  TP shared/not=0.381/0.151
+  EmailClusterId     values=   30,650  multi-org values=12.53%  rows=99.46%  top=-1.0 (99.0%)  TP shared/not=0.354/0.276
+  RegistryKey        values=    1,624  multi-org values=9.91%  rows=99.96%  top=1631 (99.8%)  TP shared/not=0.354/0.127
+  RegistryValueName  values=      570  multi-org values=11.40%  rows=99.99%  top=635 (99.9%)  TP shared/not=0.354/0.057
+  RegistryValueData  values=      858  multi-org values=7.69%  rows=99.97%  top=860 (99.9%)  TP shared/not=0.354/0.098
+  ApplicationId      values=    2,249  multi-org values=24.81%  rows=99.98%  top=2251 (97.8%)  TP shared/not=0.354/0.420
+  ApplicationName    values=    3,409  multi-org values=20.86%  rows=99.96%  top=3421 (97.7%)  TP shared/not=0.354/0.245
+  OAuthApplicationId values=      874  multi-org values=11.10%  rows=99.99%  top=881 (100.0%)  TP shared/not=0.354/0.132
+  FileName           values=  276,095  multi-org values=1.74%  rows=93.48%  top=289573 (89.1%)  TP shared/not=0.370/0.126
+  FolderPath         values=  106,825  multi-org values=0.76%  rows=94.98%  top=117668 (90.7%)  TP shared/not=0.366/0.121
+  ResourceIdName     values=    2,695  multi-org values=0.15%  rows=99.92%  top=3586 (99.9%)  TP shared/not=0.354/0.127
+
+== ids vs label and time, within organisations (Spearman, median over orgs with >=200 rows)
+/usr/local/lib/python3.13/dist-packages/pandas/core/nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/content/precinct6_research/14_guide_id_check.py:64: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  res = big.groupby("o").apply(lambda g: pd.Series({
+  IncidentId rho(id, TP)=-0.015  rho(id, time)=+0.037  over 1,764 orgs
+/usr/local/lib/python3.13/dist-packages/pandas/core/nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/content/precinct6_research/14_guide_id_check.py:64: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  res = big.groupby("o").apply(lambda g: pd.Series({
+  AlertId    rho(id, TP)=-0.023  rho(id, time)=+0.052  over 1,764 orgs
+/usr/local/lib/python3.13/dist-packages/pandas/core/nanops.py:1632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/content/precinct6_research/14_guide_id_check.py:64: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  res = big.groupby("o").apply(lambda g: pd.Series({
+  Id         rho(id, TP)=-0.004  rho(id, time)=+0.005  over 1,764 orgs
+
+saved -> results/guide_id_check

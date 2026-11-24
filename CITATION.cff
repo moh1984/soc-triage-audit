@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "What Do SOC Triage Models Learn? Leakage, Sampling Bias, Organization Identity and Protocol Effects on Two Real Multi-Organization Datasets"
+authors:
+  - family-names: Baklizi
+    given-names: Mahmoud
+    affiliation: University of Petra
+    email: mbaklizi@uop.edu.jo
+  - family-names: Alkhazaleh
+    given-names: Mohammad
+    affiliation: Isra University
+    email: m.alkhazaleh@iu.edu.jo
+  - family-names: Alzghoul
+    given-names: Musab Bassam
+    affiliation: Isra University
+  - family-names: Al Sardy
+    given-names: Loui
+    affiliation: Friedrich-Alexander-Universität Erlangen-Nürnberg
+date-released: 2026-10-24
+license: MIT
