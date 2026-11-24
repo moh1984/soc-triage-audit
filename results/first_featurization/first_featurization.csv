@@ -1,0 +1,4 @@
+protocol,model,roc_auc,dst_ip_freq_roc_train,dst_ip_freq_roc_test
+naive_global_temporal,lgbm_tab,0.24291943253081694,0.10525898040049064,0.7308174914101043
+random_events,lgbm_tab,0.9423259130058905,,
+incident_grouped,lgbm_tab,0.9207586170371092,,

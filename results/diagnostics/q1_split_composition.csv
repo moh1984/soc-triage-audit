@@ -1,0 +1,16 @@
+_side,stream_name,org_id,rows,escalated,rate_%
+tra,cisco_asa,ORG-0005,385244,3369,0.87
+tra,aws_vpc_flow_log,ORG-0004,43805,593,1.35
+tra,microsoft-windows-security-auditing,ORG-0003,3664,15,0.41
+tra,barracuda_waf,ORG-0005,50,11,22.0
+tra,Crowdstrike Detection,ORG-0004,371,10,2.7
+tra,DUO Asset Inventory,ORG-0001,2,0,0.0
+tra,DUO Asset Inventory,ORG-0003,18,0,0.0
+tra,DUO Asset Inventory,ORG-0004,9,0,0.0
+tra,generic_log,ORG-0001,2728,0,0.0
+tra,microsoft-windows-security-auditing,ORG-0004,1,0,0.0
+tra,symantec_dlp,ORG-0004,111,0,0.0
+tes,aws_vpc_flow_log,ORG-0004,152998,3563,2.33
+tes,Crowdstrike Detection,ORG-0004,3129,10,0.32
+tes,DUO Asset Inventory,ORG-0004,56,0,0.0
+tes,symantec_dlp,ORG-0004,600,0,0.0

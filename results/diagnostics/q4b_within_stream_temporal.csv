@@ -1,0 +1,3 @@
+stream,train_pos,test_pos,roc,pr_auc,base_rate,note
+cisco_asa,2926,431,0.925383951787822,0.08886164548061554,0.004927291018840315,
+aws_vpc_flow_log,4156,0,,,,no positives on one side of the cut

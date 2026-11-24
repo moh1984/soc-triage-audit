@@ -1,0 +1,3 @@
+protocol,train_rows_count_changes,test_rows_count_changes,test_alerts_count_changes
+official,0.215466446188721,0.41150079363701764,0.40327778823824767
+incident_temporal,0.020004702010874512,0.04709114053277454,0.05473636203808307

@@ -1,0 +1,11 @@
+protocol,comparison,a,b,pr_auc_diff,ci95_lo,ci95_hi,p_one_sided
+incident_grouped,context effect (logreg),logreg_tab+ctx,logreg_tab,0.07081516648308843,0.06501881184727233,0.0776848539964873,0.0
+incident_grouped,raw text vs tabular (logreg),logreg_text,logreg_tab,0.039668232244591664,0.03315056743070473,0.04672101209590111,0.0
+asa_temporal,context effect (logreg),logreg_tab+ctx,logreg_tab,0.025371207949555663,0.011518801626109961,0.04254276686736181,0.0
+asa_temporal,raw text vs tabular (logreg),logreg_text,logreg_tab,0.00477760418793606,-0.005876189759800267,0.013305363685467949,0.225
+vpc_wave,context effect (logreg),logreg_tab+ctx,logreg_tab,-0.041261563608546575,-0.0443631575432199,-0.038171868539930154,0.0
+vpc_wave,raw text vs tabular (logreg),logreg_text,logreg_tab,-0.040385052745403334,-0.04295552480292486,-0.03815213260154242,0.0
+asa_to_vpc,context effect (logreg),logreg_tab+ctx,logreg_tab,-0.021922592242790973,-0.02416902144160247,-0.019945307665283175,0.0
+asa_to_vpc,raw text vs tabular (logreg),logreg_text,logreg_tab,-0.023040896057805276,-0.025277319940763023,-0.02102562498404711,0.0
+vpc_to_asa,context effect (logreg),logreg_tab+ctx,logreg_tab,0.03449131006275383,0.03166337831464237,0.0374370783473339,0.0
+vpc_to_asa,raw text vs tabular (logreg),logreg_text,logreg_tab,-0.03236777850662288,-0.0338786804661948,-0.031034869662374773,0.0

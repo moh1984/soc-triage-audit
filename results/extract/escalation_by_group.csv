@@ -1,0 +1,14 @@
+by,group,malicious,suspicious,events,escalation_rate
+org_id,ORG-0001,0,2940,2940,0.0
+org_id,ORG-0003,16,3819,3835,0.0041720990873533245
+org_id,ORG-0004,4176,196942,201118,0.020763929633349575
+org_id,ORG-0005,3536,411433,414969,0.008521118444992277
+stream_name,Crowdstrike Detection,20,3515,3535,0.005657708628005658
+stream_name,DUO Asset Inventory,0,85,85,0.0
+stream_name,aws_vpc_flow_log,4156,192647,196803,0.021117564264772386
+stream_name,barracuda_waf,11,53,64,0.171875
+stream_name,cisco_asa,3525,411380,414905,0.008495920752943444
+stream_name,generic_log,0,2938,2938,0.0
+stream_name,microsoft-windows-security-auditing,16,3802,3818,0.0041906757464641176
+stream_name,symantec_dlp,0,714,714,0.0
+all,Total,7728,615134,622862,0.01240724269581384

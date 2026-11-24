@@ -1,0 +1,31 @@
+stream_name,benign,malicious,suspicious
+aws_vpc_flow_log,0,4156,15063
+cisco_asa,81,3525,91537
+Crowdstrike Detection,0,20,38
+microsoft-windows-security-auditing,421458,16,113
+barracuda_waf,14841,11,18
+Crowdstrike Asset Inventory,276,0,0
+USER-0700,3,0,0
+.net runtime,10,0,0
+Integrations Status,408,0,0
+DUO Asset Inventory,153,0,0
+ad_audit_plus,1275,0,0
+adsync,7,0,0
+apache_access_log,170,0,0
+anacron,1,0,0
+asp.net 4.0.30319.0,2,0,0
+USER-17994,15,0,0
+ad fs auditing,1193,0,0
+Microsoft Graph Asset Inventory,470,0,0
+barracuda_ess,391,0,0
+aws_cloudtrail_events,543159,0,0
+aws_cloud_trail,34484,0,0
+cisco_os,192,0,0
+directory synchronization,203,0,0
+dnsmasq,34110,0,0
+edgeupdate,6,0,0
+crond,2308,0,0
+eventlog,1,0,0
+filebeat_diagnostic,905,0,0
+general_info,29,0,0
+generic_log,1,0,10

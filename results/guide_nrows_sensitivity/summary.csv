@@ -1,0 +1,5 @@
+,,inc_pr_auc,inc_pr_auc,inc_pr_auc,inc_roc_auc,inc_roc_auc,inc_roc_auc,roc_auc,roc_auc,roc_auc,roc_auc_diff,roc_auc_diff,inc_roc_auc_diff,inc_roc_auc_diff,inc_pr_auc_diff,inc_pr_auc_diff
+variant,,dropped,pooled,within_split,dropped,pooled,within_split,dropped,pooled,within_split,within_split-pooled,dropped-pooled,within_split-pooled,dropped-pooled,within_split-pooled,dropped-pooled
+protocol,features,,,,,,,,,,,,,,,
+incident_temporal,content,0.4999,0.5517,0.5496,0.7311,0.7601,0.7598,0.8071,0.8289,0.8264,-0.0025,-0.0218,-0.0003,-0.029,-0.0021,-0.0518
+official,content,0.5716,0.6499,0.6271,0.7744,0.819,0.8059,0.926,0.9406,0.9336,-0.007,-0.0146,-0.0131,-0.0446,-0.0228,-0.0783

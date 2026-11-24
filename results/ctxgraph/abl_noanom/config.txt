@@ -1,0 +1,1 @@
+{'data': '100m', 'only': 'asa_temporal,vpc_wave', 'seeds': '0,1,2,3,4', 'vpc_cut': '2024-07-28', 'epochs': 4, 'batch': 1000, 'lr': 0.001, 'mem': 64, 'hid': 128, 'pos_weight': 20.0, 'w_link': 0.2, 'adv': 0.3, 'uda': False, 'train_frac': 0.9, 'val': 'grouped', 'no_memory': False, 'no_ctx': False, 'no_anomaly': True, 'text': 'template', 'tag': 'abl_noanom'}

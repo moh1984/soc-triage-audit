@@ -1,0 +1,1 @@
+{'data': '100m', 'only': 'asa_to_vpc,vpc_to_asa', 'seeds': '0,1,2,3,4', 'vpc_cut': '2024-07-28', 'epochs': 4, 'batch': 1000, 'lr': 0.001, 'mem': 64, 'hid': 128, 'pos_weight': 20.0, 'w_link': 0.2, 'adv': 0.3, 'uda': True, 'train_frac': 0.9, 'no_memory': False, 'no_ctx': False, 'no_anomaly': False, 'text': 'template', 'tag': ''}
