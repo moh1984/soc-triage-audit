@@ -16,5 +16,6 @@ authors:
   - family-names: Al Sardy
     given-names: Loui
     affiliation: Friedrich-Alexander-Universität Erlangen-Nürnberg
+repository-code: "https://github.com/moh1984/soc-triage-audit"
 date-released: 2026-11-24
 license: MIT
