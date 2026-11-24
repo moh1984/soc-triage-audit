@@ -1,0 +1,11 @@
+data/
+guide/
+__pycache__/
+*.pyc
+*.parquet
+data/**/*.csv
+guide/**/*.csv
+*.npz
+kaggle.json
+.venv/
+paper/fig/
